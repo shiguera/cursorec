@@ -52,7 +52,7 @@ En la *ventana de comandos*, a la que llamaremos también de manera indistinta *
 
 La ruta del directorio actual de trabajo se puede mostrar en consola con el comando **pwd**. Pruebe a teclear el comando *pwd* en la ventana de comandos. Verá que se muestra la ruta del directorio actual y que coincide con la mostrada en las barras desplegables del interface gráfico.
 
-.. note:: **pwd** es el acrónimo de print working directory
+.. note:: **pwd** es el acrónimo de *print working directory*
 
 .. note:: **Directorio** es cada una de las divisiones lógicas que se hacen en los sistemas de archivos y que pueden contener otros archivos o directorios. Desde la aparición de los interfaces gráficos para los sistemas operativos se los empezó a denominar también **carpetas** por analogía con las carpetas de los archivos físicos. El icono que se suele utilizar para representar un directorio de un disco es el de una carpeta. En este curso utilizaremos indistintamente las palabras directorio o carpeta para referirnos a ellos. También es habitual la denominación *subdirectorios*, cuando queremos referirnos a los directorios que están contenidos en uno concreto: *'Los subdirectorios del directorio 'programs', que en terminos gráficos serían las carpetas que están contenidas en la carpeta 'programs'*.
 
@@ -60,25 +60,49 @@ El contenido del directorio actual lo podemos mostrar en la consola tecleando el
 
 Podemos cambiar el **directorio de trabajo** desde la consola tecleando el comando **cd**, (*change directory*), que admite varias formas de uso:
 
-**cd nombre_directorio**: Cambia el directorio actual al directorio de nombre *nombre_directorio*, que debe ser uno de los subdirectorios del directorio actual.
-
-**cd ruta_completa**: Cambia el directorio de trabajo actual a uno especificado por su ruta completa.
-
-**cd ..**: Cambia al directorio *padre* del directorio actual. El directorio *padre* es el directorio que contiene al directorio actual.
+-**cd nombre_directorio**: Cambia el directorio actual al directorio de nombre *nombre_directorio*, que debe ser uno de los subdirectorios del directorio actual.
+-**cd ruta_completa**: Cambia el directorio de trabajo actual a uno especificado por su ruta completa.
+-**cd ..**: Cambia al directorio *padre* del directorio actual. El directorio *padre* es el directorio que contiene al directorio actual.
 
 .. tip:: 
 	Pruebe a teclear varios cambios de directorios a través de la consola. Conviene ejercitarse en el manejo de la consola para moverse por los discos del ordenador. No solo es eficiente, sino que además es imprescindible en determinados entornos de trabajo en los que no es posible disponer de interface gráfico para Octave. También es importante saber manejar nombres de archivos y sus rutas de acceso a la hora de trabajar en *lectura-escritura* de ficheros. A medida que teclea los comandos de cambio de directorio, observe como cambia el contenido de los desplegables del directorio actual y de la ventana del Explorador de archivos.
 
 Cada vez que teclea un comando en la consola de *Octave* se puede observar como se actualiza el contenido de la ventana **historial de comandos**. En esta ventana se muestran de manera ordenada los distintos comandos tecleados con anterioridad. Se puede volver a ejecutar un comando haciendo doble click sobre él. Para acceder al historial de comandos desde la consola tenemos que teclear el comando **history**, que mostrará un listado de los comandos tecleados con anterioridad, con un número de comando asignado a cada uno de ellos. Podemos ejecutar un comando de la lista tecleando **run_history number**, donde *number* es el número de comando en el listado *history*. Podemos ejecutar los comandos comprendidos entre dos números haciendo **run_history num1 num2**, que ejecutará todos los comandos entre el comando *num1* y el comando *num2*.
 
+Para comprobar el funcionamiento de la ventana del **espacio de trabajo** hay que definir alguna variable. Pruebe a teclear alguna sentencia que asigne valor a alguna variable, por ejemplo, **a=3.0** o **b=-1**. Verá como tras teclear cada una de las asignaciones anteriores aparecen lineas de información en la ventana **espacio de trabajo**. Eso es lo que denominamos *espacio de trabajo*, el conjunto de variables existentes y guardadas en memoria a cuyos valores podemos acceder en cada momento. Para acceder al espacio de trabajo desde la consola hay que teclear el comando **whos**. 
 
-.. Note:: Si no se tienen accesos directos al programa tras la instalación se puede intentar lo siguiente:
+.. tip::
+	El comando *whos* nos muestra un listado por consola con las distintas variables existentes y sus tipos de datos. Compruebe, al teclear el comando, que la información mostrada por el comando *whos* se corresponde con la información mostrada en la ventana *espacio de trabajo*.
+
+Podemos borrar una variable del *espacio de trabajo*, o lo que es lo mismo borrarla de memoria, mediante el uso del comando **clear nombre_variable**. Pruebe el comando *clear* borrando alguna de las variables que haya definido anteriormente. Compruebe mediante el comando *whos* y mediante la inspección visual de la ventana del *espacio de trabajo* que la variable borrada ha dejado de estar en memoria. El comando **clear** sin argumentos borrará de la memoria todas las variables que tuviéramos definidas hasta el momento.
+
+Obtención de ayuda
+------------------
+La pestaña de documentación situada en la parte inferior de la ventana de trabajo nos da acceso a una documentación *off-line*, (off-line=sin necesidad de conexión a internet). Podemos navegar por las distintas secciones y comandos lo que nos permitirá aprender muchas de las características de *Octave* y del lenguaje *m*.
+
+Para acceder a la ayuda desde la consola disponemos de dos comandos muy útiles: el comando **help** y el comando **lookfor**. El comando *help* es de utilidad cuando conocemos el nombre exacto de la función o comando que queremos consultar. Por ejemplo, si tecleamos **help run_history** podremos ver las distintas opciones que ofrece el comando *run_history*. El comando **lookfor**, en cambio, nos devuelve una lista de funciones y comandos que contengan en su documentación la palabra buscada. Podemos hacer una prueba tecleando el comando **lookfor history** y viendo el listado de funciones y comandos que tienen relación con la palabra *history*.
+
+.. tip:: 
+	Hay mucha documentación disponible en la red acerca de la utilización de *Octave* y *Matlab*. En general, la mayoría de funciones y comandos funcionan igual en *Octave* o en *Matlab*, por lo que se puede utilizar indistintamente la documentación de un programa u otro.
+
+	La mejor documentación de *Octave* es la que hay disponible en la web de *Octave* y que se actualiza con frecuencia [1]. La documentación disponible en la web de *Matlab* también es muy buena y conviene tenerla siempre en cuenta a la hora de aprender el uso de funciones y comandos [2].
+
+	- [1] **Octave**: :raw-html:`<a href='http://www.gnu.org/software/octave/doc/interpreter/' target='_blank'>http://www.gnu.org/software/octave/doc/interpreter/</a>`
+
+ 	- [2] **Matlab**: :raw-html:`<a href='http://es.mathworks.com/help/matlab/' target='_blank'>http://es.mathworks.com/help/matlab/</a>`
+
+
+
+Problemas de instalación
+------------------------
+	
+.. note:: Si tras la instalación no se tienen accesos directos en el escritorio para arrancar *Octave*  se puede intentar lo siguiente:
 
 	- **Localizar el directorio bin de la instalación:** Lo primero que tenemos que hacer es localizar el directorio donde ha quedado instalado el programa. Durante la instalación se nos ofrece instalar en algo parecido a **C:\\Octave\\Octave-3.8.1**. En general será algo parecido a *C:\\Programs\\Octave* o *C:\\Octave* o también *C:\\Archivos de Programa\\Octave*. En cualquier caso, dentro del directorio de la instalación debemos localizar el directorio **bin**, que es donde se encuentran los programas ejecutables de *Octave*. 
 
-	- **Añadir la ruta del directorio bin a la variable path del sistema:** La variable *path* del sistema guarda una lista de directorios separados por *';'*. Estos directorios es donde el sistema operativo busca cada vez que tiene que ejecutar un programa. En el siguiente enlace: `Cómo cambiar el path de Windows <http://blogs.itpro.es/jioller/2011/03/25/cambio-del-path-de-windows/>`_ explican como hacer el cambio. El cambio que hay que hacer es añadir al final de la cadena *path* existente un *';'* y la ruta del directorio *bin* que será algo parecido a *C:\\Octave\\bin*. (ver Nota 1)
+	- **Añadir la ruta del directorio bin a la variable path del sistema:** La variable *path* del sistema guarda una lista de directorios separados por *';'*. Estos directorios es donde el sistema operativo busca cada vez que tiene que ejecutar un programa. En el siguiente enlace: `Cómo cambiar el path de Windows <http://blogs.itpro.es/jioller/2011/03/25/cambio-del-path-de-windows/>`_ explican como hacer el cambio. El cambio que hay que hacer es añadir al final de la cadena *path* existente un *';'* y la ruta del directorio *bin* que será algo parecido a *C:\\Octave\\Octave-3.8\\bin*. (ver Nota 1)
 
-	- **Poner en el escritorio accesos directos a *Octave*:** Tenemos que prestar atención a los archivos **octave.exe** y **octave-gui.exe**. Son los programas que arrancan *Octave* en modo consola y en modo gráfico, respectivamente. (*GUI es el acrónimo de Graphic User Interface*). Podemos crear unos accesos directos a ambos programas y tenerlos disponibles en el escritorio, de forma que podamos acceder rapidamente a *Octave*. Para aprender cómo crear accesos directos en Windows podéis consultar el siguiente enlace. **TODO**
+	- **Poner en el escritorio accesos directos a *Octave*:** Tenemos que prestar atención a los archivos **octave.exe** y **octave-gui.exe**. Son los programas que arrancan *Octave* en modo consola y en modo gráfico, respectivamente. (*GUI es el acrónimo de Graphic User Interface*). Podemos crear unos accesos directos a ambos programas y tenerlos disponibles en el escritorio, de forma que podamos acceder rapidamente a *Octave*. 
 
 
 
