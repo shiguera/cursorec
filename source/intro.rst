@@ -76,6 +76,9 @@ Para comprobar el funcionamiento de la ventana del **espacio de trabajo** hay qu
 
 Podemos borrar una variable del *espacio de trabajo*, o lo que es lo mismo borrarla de memoria, mediante el uso del comando **clear nombre_variable**. Pruebe el comando *clear* borrando alguna de las variables que haya definido anteriormente. Compruebe mediante el comando *whos* y mediante la inspección visual de la ventana del *espacio de trabajo* que la variable borrada ha dejado de estar en memoria. El comando **clear** sin argumentos borrará de la memoria todas las variables que tuviéramos definidas hasta el momento.
 
+.. tip::
+	El comando **clc**, (*clear console*), permite borrar la pantalla de la consola y devolver el cursor a la parte superior izquierda. Este comando no afecta la contenido de las variables, y es un comando que también utilizaremos a menudo. 
+
 Obtención de ayuda
 ------------------
 La pestaña de documentación situada en la parte inferior de la ventana de trabajo nos da acceso a una documentación *off-line*, (off-line=sin necesidad de conexión a internet). Podemos navegar por las distintas secciones y comandos lo que nos permitirá aprender muchas de las características de *Octave* y del lenguaje *m*.
@@ -85,7 +88,7 @@ Para acceder a la ayuda desde la consola disponemos de dos comandos muy útiles:
 .. tip:: 
 	Hay mucha documentación disponible en la red acerca de la utilización de *Octave* y *Matlab*. En general, la mayoría de funciones y comandos funcionan igual en *Octave* o en *Matlab*, por lo que se puede utilizar indistintamente la documentación de un programa u otro.
 
-	La mejor documentación de *Octave* es la que hay disponible en la `web de *Octave* <http://www.gnu.org/software/octave/doc/interpreter/>`_ y que se actualiza con frecuencia [1]. La documentación disponible en la `web de *Matlab* <http://es.mathworks.com/help/matlab/>`_ también es muy buena y conviene tenerla siempre en cuenta a la hora de aprender el uso de funciones y comandos [2].
+	La mejor documentación de *Octave* es la que hay disponible en la `web de Octave <http://www.gnu.org/software/octave/doc/interpreter/>`_ y que se actualiza con frecuencia [1]. La documentación disponible en la `web de Matlab <http://es.mathworks.com/help/matlab/>`_ también es muy buena y conviene tenerla siempre en cuenta a la hora de aprender el uso de funciones y comandos [2].
 
 	-[1] http://www.gnu.org/software/octave/doc/interpreter/
 
