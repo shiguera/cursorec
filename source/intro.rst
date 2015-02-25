@@ -18,7 +18,7 @@ Los que tengan ordenadores **Mac** con sistema operativo **OSX** pueden seguir l
 
 Los usuarios de Linux pueden acceder a la página de descagas del `portal web de Octave <http://www.gnu.org/software/octave/download.html>`_ [2] y seguir las instrucciones que se dan allí.
 
-Los usuarios de sistemas operativos Windows tienen que utilizar la versión del instalador que se ofrece en la página `[3] <http://mxeoctave.osuv.de>`_ para acceder a todas las características de la versión 3.8. Hay que descargar el instalador y ejecutarlo en nuestro ordenador. También ofrecen una versión portable de *Octave*. Portable se refiere a que no requiere instalación. Se puede copiar en una memoria USB, por ejemplo, y ejecutar en cualquier ordenador con sistema operativo Windows.
+Los usuarios de sistemas operativos **Windows** tienen que utilizar la versión del instalador que se ofrece en la página `http://mxeoctave.osuv.de [3] <http://mxeoctave.osuv.de>`_ para acceder a todas las características de la versión 3.8. Hay que descargar el instalador y ejecutarlo en nuestro ordenador. También ofrecen una versión portable de *Octave*. Portable se refiere a que no requiere instalación. Se puede copiar en una memoria USB, por ejemplo, y ejecutar en cualquier ordenador con sistema operativo Windows.
 
 [1] http://wiki.octave.org/Octave_for_MacOS_X 
 
@@ -30,14 +30,14 @@ Primeros pasos tras la instalación
 ----------------------------------
 Si la instalación ha transcurrido normalmente, al final de la misma deberíamos tener unos accesos directos en el escritorio para poder arrancar Octave en modo consola o en modo gráfico. Si arrancamos Octave en modo gráfico accederemos al Graphic User Interface de Octave. En la siguiente figura se muestran las diferentes secciones de la ventana gráfica de Octave.
 
-.. image:: _static/octavegui.png
-   ::width:: 800px
+.. image:: _images/octavegui.png
+   :width: 800px
    :alt: octavegui
 
 
 .. Note:: Si no se tienen accesos directos al programa tras la instalación se puede intentar lo siguiente:
 
-	- **Localizar el directorio *bin* de la instalación:** Lo primero que tenemos que hacer es localizar el directorio donde ha quedado instalado el programa. Durante la instalación se nos ofrece instalar en algo parecido a **C:\\Octave\\Octave-3.8.1**. En general será algo parecido a *C:\\Programs\\Octave* o *C:\\Octave* o también *C:\\Archivos de Programa\\Octave*. En cualquier caso, dentro del directorio de la instalación debemos localizar el directorio **bin**, que es donde se encuentran los programas ejecutables de *Octave*. 
+	- **Localizar el directorio ***bin*** de la instalación:** Lo primero que tenemos que hacer es localizar el directorio donde ha quedado instalado el programa. Durante la instalación se nos ofrece instalar en algo parecido a **C:\\Octave\\Octave-3.8.1**. En general será algo parecido a *C:\\Programs\\Octave* o *C:\\Octave* o también *C:\\Archivos de Programa\\Octave*. En cualquier caso, dentro del directorio de la instalación debemos localizar el directorio **bin**, que es donde se encuentran los programas ejecutables de *Octave*. 
 
 	- **Añadir la ruta del directorio bin a la variable path del sistema:** La variable *path* del sistema guarda una lista de directorios separados por *';'*. Estos directorios es donde el sistema operativo busca cada vez que tiene que ejecutar un programa. En el siguiente enlace: `Cómo cambiar el path de Windows <http://blogs.itpro.es/jioller/2011/03/25/cambio-del-path-de-windows/>`_ explican como hacer el cambio. El cambio que hay que hacer es añadir al final de la cadena *path* existente un *';'* y la ruta del directorio *bin* que será algo parecido a *C:\\Octave\\bin*. (ver Nota 1)
 
