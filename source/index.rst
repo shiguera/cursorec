@@ -12,10 +12,6 @@ Contents:
    :maxdepth: 2
 
    intro.rst
-   semana1.rst
-   semana2.rst
-   semana3.rst
-   semana4.rst
    
 
 Indices and tables
