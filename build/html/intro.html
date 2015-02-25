@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introducción &mdash; Introducción a la programación con Octave 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Introducción a la programación con Octave 1.0 documentation" href="index.html" />
+    <link rel="next" title="Semana 1" href="semana1.html" />
+    <link rel="prev" title="Introducción a la programación con Octave" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="semana1.html" title="Semana 1"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Introducción a la programación con Octave"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Introducción a la programación con Octave 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="instalacion-de-octave-3-8">
+<h2>Instalación de Octave 3.8<a class="headerlink" href="#instalacion-de-octave-3-8" title="Permalink to this headline">¶</a></h2>
+<p>Durante este curso utilizaremos Octave versión 3.8, la última disponible a la fecha de redactar este manual. Es posible que tengas ya instalada otra versión de Octave o quizás Octave-UPM. Cualquiera de esas aplicaciones te puede servir para seguir el curso, pero te recomendamos la instalación de Octave versión 3.8, que trae importantes mejoras respecto de versiones anteriores de Octave.</p>
+<p>Respecto a los usuarios de Matlab que decidan seguir el curso con Matlab, no deberían encontrar problemas. Si surgiera algún tipo de incompatibilidad entre los ejercicios del curso y Matlab os agradeceremos que nos lo indiquéis, a través del foro, para ir completando una lista de incompatibilidades, que no será grande, y se tratará más bien de pequeños detalles.</p>
+<p>En poco tiempo, seguramente antes de acabar este curso, aparecerá la versión 4.0 de Octave, que traerá todavía más mejoras y correcciones de bugs respecto de versiones anteriores. Os tendremos puntuálmente informados a través del foro de novedades de la asignatura.</p>
+<p>Para instalar la versión 3.8 de Octave hay que seguir las instrucciones que se dan a continuación, dependiendo del sistema operativo que tengáis instalado en vuestro ordenador.</p>
+<p>Los que tengan ordenadores <strong>Mac</strong> con sistema operativo <strong>OSX</strong> pueden seguir las instrucciones que se dan en el <a class="reference external" href="http://wiki.octave.org/Octave_for_MacOS_X">wiki de Octave</a> [1].</p>
+<p>Los usuarios de Linux pueden acceder a la página de descagas del <a class="reference external" href="http://www.gnu.org/software/octave/download.html">portal web de Octave</a> [2] y seguir las instrucciones que se dan allí.</p>
+<p>Los usuarios de sistemas operativos Windows tienen que utilizar la versión del instalador que se ofrece en la página <a class="reference external" href="http://mxeoctave.osuv.de">[3]</a> para acceder a todas las características de la versión 3.8. Hay que descargar el instalador y ejecutarlo en nuestro ordenador. También ofrecen una versión portable de <em>Octave</em>. Portable se refiere a que no requiere instalación. Se puede copiar en una memoria USB, por ejemplo, y ejecutar en cualquier ordenador con sistema operativo Windows.</p>
+<p>[1] <a class="reference external" href="http://wiki.octave.org/Octave_for_MacOS_X">http://wiki.octave.org/Octave_for_MacOS_X</a></p>
+<p>[2] <a class="reference external" href="http://www.gnu.org/software/octave/download.html">http://www.gnu.org/software/octave/download.html</a></p>
+<p>[3] <a class="reference external" href="http://mxeoctave.osuv.de/">http://mxeoctave.osuv.de/</a></p>
+</div>
+<div class="section" id="primeros-pasos-tras-la-instalacion">
+<h2>Primeros pasos tras la instalación<a class="headerlink" href="#primeros-pasos-tras-la-instalacion" title="Permalink to this headline">¶</a></h2>
+<p>Si la instalación ha transcurrido normalmente, al final de la misma deberíamos tener unos accesos directos en el escritorio para poder arrancar Octave en modo consola o en modo gráfico. Si arrancamos Octave en modo gráfico accederemos al Graphic User Interface de Octave. En la siguiente figura se muestran las diferentes secciones de la ventana gráfica de Octave.</p>
+<a class="reference internal image-reference" href="_images/octavegui.png"><img alt="octavegui" src="_images/octavegui.png" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Si no se tienen accesos directos al programa tras la instalación se puede intentar lo siguiente:</p>
+<ul class="last simple">
+<li><strong>Localizar el directorio *bin* de la instalación:</strong> Lo primero que tenemos que hacer es localizar el directorio donde ha quedado instalado el programa. Durante la instalación se nos ofrece instalar en algo parecido a <strong>C:\Octave\Octave-3.8.1</strong>. En general será algo parecido a <em>C:\Programs\Octave</em> o <em>C:\Octave</em> o también <em>C:\Archivos de Programa\Octave</em>. En cualquier caso, dentro del directorio de la instalación debemos localizar el directorio <strong>bin</strong>, que es donde se encuentran los programas ejecutables de <em>Octave</em>.</li>
+<li><strong>Añadir la ruta del directorio bin a la variable path del sistema:</strong> La variable <em>path</em> del sistema guarda una lista de directorios separados por <em>&#8216;;&#8217;</em>. Estos directorios es donde el sistema operativo busca cada vez que tiene que ejecutar un programa. En el siguiente enlace: <a class="reference external" href="http://blogs.itpro.es/jioller/2011/03/25/cambio-del-path-de-windows/">Cómo cambiar el path de Windows</a> explican como hacer el cambio. El cambio que hay que hacer es añadir al final de la cadena <em>path</em> existente un <em>&#8216;;&#8217;</em> y la ruta del directorio <em>bin</em> que será algo parecido a <em>C:\Octave\bin</em>. (ver Nota 1)</li>
+<li><strong>Poner en el escritorio accesos directos a *Octave*:</strong> Tenemos que prestar atención a los archivos <strong>octave.exe</strong> y <strong>octave-gui.exe</strong>. Son los programas que arrancan <em>Octave</em> en modo consola y en modo gráfico, respectivamente. (<em>GUI es el acrónimo de Graphic User Interface</em>). Podemos crear unos accesos directos a ambos programas y tenerlos disponibles en el escritorio, de forma que podamos acceder rapidamente a <em>Octave</em>. Para aprender cómo crear accesos directos en Windows podéis consultar el siguiente enlace. <strong>TODO</strong></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introducción</a><ul>
+<li><a class="reference internal" href="#instalacion-de-octave-3-8">Instalación de Octave 3.8</a></li>
+<li><a class="reference internal" href="#primeros-pasos-tras-la-instalacion">Primeros pasos tras la instalación</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Introducción a la programación con Octave</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="semana1.html"
+                        title="next chapter">Semana 1</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/intro.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="semana1.html" title="Semana 1"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Introducción a la programación con Octave"
+             >previous</a> |</li>
+        <li><a href="index.html">Introducción a la programación con Octave 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Santiago Higuera.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>
