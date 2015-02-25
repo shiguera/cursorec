@@ -31,6 +31,8 @@ Primeros pasos tras la instalación
 Si la instalación ha transcurrido normalmente, al final de la misma deberíamos tener unos accesos directos en el escritorio para poder arrancar Octave en modo consola o en modo gráfico. Si arrancamos Octave en modo gráfico accederemos al Graphic User Interface de Octave. En la siguiente figura se muestran las diferentes secciones de la ventana gráfica de Octave.
 
 .. image:: _static/octavegui.png
+   :width: 800px
+   :alt: octavegui
 
 
 .. Note:: Si no se tienen accesos directos al programa tras la instalación se puede intentar lo siguiente:
