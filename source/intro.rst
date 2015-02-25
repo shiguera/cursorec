@@ -87,9 +87,9 @@ Para acceder a la ayuda desde la consola disponemos de dos comandos muy útiles:
 
 	La mejor documentación de *Octave* es la que hay disponible en la web de *Octave* y que se actualiza con frecuencia [1]. La documentación disponible en la web de *Matlab* también es muy buena y conviene tenerla siempre en cuenta a la hora de aprender el uso de funciones y comandos [2].
 
-	- [1] **Octave**: :raw-html:`<a href='http://www.gnu.org/software/octave/doc/interpreter/' target='_blank'>http://www.gnu.org/software/octave/doc/interpreter/</a>`
+	-[1] **Octave**: :raw-html:`<a href='http://www.gnu.org/software/octave/doc/interpreter/' target='_blank'>http://www.gnu.org/software/octave/doc/interpreter/</a>`_
 
- 	- [2] **Matlab**: :raw-html:`<a href='http://es.mathworks.com/help/matlab/' target='_blank'>http://es.mathworks.com/help/matlab/</a>`
+ 	-[2] **Matlab**: :raw-html:`<a href='http://es.mathworks.com/help/matlab/' target='_blank'>http://es.mathworks.com/help/matlab/</a>`_
 
 
 
