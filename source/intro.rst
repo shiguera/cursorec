@@ -85,12 +85,11 @@ Para acceder a la ayuda desde la consola disponemos de dos comandos muy útiles:
 .. tip:: 
 	Hay mucha documentación disponible en la red acerca de la utilización de *Octave* y *Matlab*. En general, la mayoría de funciones y comandos funcionan igual en *Octave* o en *Matlab*, por lo que se puede utilizar indistintamente la documentación de un programa u otro.
 
-	La mejor documentación de *Octave* es la que hay disponible en la web de *Octave* y que se actualiza con frecuencia [1]. La documentación disponible en la web de *Matlab* también es muy buena y conviene tenerla siempre en cuenta a la hora de aprender el uso de funciones y comandos [2].
+	La mejor documentación de *Octave* es la que hay disponible en la `web de *Octave* <http://www.gnu.org/software/octave/doc/interpreter/>`_ y que se actualiza con frecuencia [1]. La documentación disponible en la `web de *Matlab* <http://es.mathworks.com/help/matlab/>`_ también es muy buena y conviene tenerla siempre en cuenta a la hora de aprender el uso de funciones y comandos [2].
 
-	-[1] **Octave**: :raw-html:`<a href='http://www.gnu.org/software/octave/doc/interpreter/' target='_blank'>http://www.gnu.org/software/octave/doc/interpreter/</a>`_
+	-[1] http://www.gnu.org/software/octave/doc/interpreter/
 
- 	-[2] **Matlab**: :raw-html:`<a href='http://es.mathworks.com/help/matlab/' target='_blank'>http://es.mathworks.com/help/matlab/</a>`_
-
+ 	-[2] http://es.mathworks.com/help/matlab/
 
 
 Problemas de instalación
