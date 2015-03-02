@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    intro.rst
+   semana1.rst
    
 
 Indices and tables

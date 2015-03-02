@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cuestión de arquitectura &mdash; Introducción a la programación con Octave 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Introducción a la programación con Octave 1.0 documentation" href="index.html" />
+    <link rel="up" title="Semana 1" href="semana1.html" />
+    <link rel="next" title="Tips and tricks del sistema operativo" href="tipsso1.html" />
+    <link rel="prev" title="Semana 1" href="semana1.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="tipsso1.html" title="Tips and tricks del sistema operativo"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="semana1.html" title="Semana 1"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Introducción a la programación con Octave 1.0 documentation</a> &raquo;</li>
+          <li><a href="semana1.html" accesskey="U">Semana 1</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p>% teoria1.rst</p>
+<div class="section" id="cuestion-de-arquitectura">
+<h1>Cuestión de arquitectura<a class="headerlink" href="#cuestion-de-arquitectura" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="los-lenguajes-de-programacion-y-sus-tipos">
+<h2>Los lenguajes de programación y sus tipos<a class="headerlink" href="#los-lenguajes-de-programacion-y-sus-tipos" title="Permalink to this headline">¶</a></h2>
+<p>Un lenguaje de programación es un lenguaje formal creado para transmitir instrucciones a un ordenador. Hay numerosos lenguajes de programación de ordenadores. Los lenguajes proporcionan conceptos que permiten razonar en términos abstractos sobre los problemas a resolver. Hay diferentes formas de abordar el problema de transmitir instrucciones a un ordenador. A lo largo de la historia de la programación han ido surgiendo diferentes modelos de programación, plasmados en lenguajes de programación concretos y que han dado lugar a una división de los lenguajes de programación según el modelo que utilizan. A dicho modelo de programación se le suele denominar el <em>paradigma</em> de programación utilizado por el lenguaje.</p>
+<p>En los <strong>lenguajes declarativos</strong> no se le dice al ordenador cómo resolver el problema, lo que se hace es describir el problema, siendo una instancia posterior quién utilizará esa información para calcular la solución. Un ejemplo de este tipo de lenguajes son los lenguajes utilizados para describir documentos, por ejemplo. Es el caso del <em>HTML</em> y del <em>XML</em>. Se describe el documento y el ordenador utilizará algún tipo de interprete del lenguaje para crear el documento en cuestión. El ejemplo que se muestra a continuación es el de un documento muy simple creado en lenguaje <em>HTML</em>:</p>
+<a class="reference internal image-reference" href="_images/htmlcode.png"><img alt="octavegui" src="_images/htmlcode.png" style="width: 400px;" /></a>
+<p>Mostramos a continuación cómo se interpreta ese código al utilizar el navegador <em>Chrome</em>. Las páginas WEB que acostumbramos a utilizar están escritas en lenguaje <em>HTML</em>. Los navegadores que utilizamos son intérpretes del lenguaje <em>HTML</em>.</p>
+<a class="reference internal image-reference" href="_images/htmlbrowsed.png"><img alt="octavegui" src="_images/htmlbrowsed.png" style="width: 400px;" /></a>
+<p>Estas líneas que estás leyendo, están escritas en el lenguaje <a class="reference external" href="http://sphinx-doc.org/index.html">Sphinx</a>,  que es un lenguaje declarativo pensado para escribir este tipo de documentos. El interprete del lenguaje lo convierte posteriormente en código <em>HTML</em>, que probablemente es la versión que estás leyendo, aunque podría ser también que estuvieras leyendo la versión <em>pdf</em> generada por el interprete que hay en el portal donde está colgada esta documentación, y que permite transcribir los documentos a formato <em>pdf</em>, que es a su vez otro lenguaje declarativo para describir documentos.</p>
+<p>Sin duda, el rey de los lenguajes declarativos para definir documentos es <strong>LaTeX</strong>. Se trata de un lenguaje destinado a escribir documentos, fundamentálmente científicos, que proporciona un tratamiento tipógrafico de alta calidad y un editor de fórmulas incomparable. <em>LaTeX</em> proporciona, además, herramientas que permiten gestionar de manera muy eficiente la estructuración del documento y la gestión de referencias bibliográficas, índices y tablas. El concepto de trabajo al escribir documentos con <em>LaTeX</em> es diferente al de los procesadores de texto habituales, permitiendo centrarse en el contenido del documento y no en su formato o presentación.</p>
+<p>Existen otros lenguajes declarativos que no están destinados a describir documentos o juegos de datos, sino a obtener la solución de problemas concretos de computación. Merece la pena destacar aquí el <em>SQL</em>, lenguaje comúnmente utilizado en el acceso a las bases de datos. Otro tipo particular de lenguajes declarativos son los lenguajes de programación <em>funcional</em>, como <em>Lisp</em>, <em>Haskell</em> o <em>Scala</em>.</p>
+<p>Por otra parte están los <strong>lenguajes imperativos</strong>, que, en lugar de limitarse a describir lo que quieren obtener como hacen los lenguajes declarativos, detallan las instrucciones que tiene que realizar el computador en cada momento para llegar a la solución del problema a resolver.</p>
+<p>Dentro de los lenguajes del tipo <em>imperativo</em>, un grupo importante lo constituyen los lenguajes basados en la <strong>programación estructurada</strong>. La <em>programación estructurada</em> es un paradigma de programación que divide los programas en rutinas y subrutinas, y que utiliza solamente tres estructuras: secuencia, selección (if y switch) e iteración (bucles for y while). Dentro de la programación estructurada es donde se encuadra el lenguaje <em>m</em> utilizado por <strong>Octave</strong> y <strong>Matlab</strong>.</p>
+<p>Otro grupo muy importante de lenguajes de programación imperativa, (otro paradigma de programación), lo constituyen los lenguajes de <strong>programación orientada a objetos</strong>. En estos lenguajes se definen los denominados <em>objetos</em> que tienen propiedades y métodos mediante los cuales pueden ser manipulados. Dentro de la programación orientada a objetos destacan el lenguaje <em>C++</em> (se lée <em>C plus plus</em>) y el lenguaje <em>Java</em>.</p>
+<p>Existen también lenguajes que pueden ser utilizados bajo distintos paradigmas de programación, lenguajes <em>multi-paradigma</em>. En general, casi todos los lenguajes permiten formas de utilización mixtas entre unos paradigmas y otros, si bien suelen estar más pensados para un paradigma de programación concreto. Dentro de los lenguajes <em>multi-paradigma</em> vamos a destacar aquí el lenguaje <em>python</em>, que permite abordar los programas desde un punto de vista de programación estruturada, como programación orientada a objetos o como programación funcional.</p>
+</div>
+<div class="section" id="arquitectura-de-un-programa">
+<h2>Arquitectura de un programa<a class="headerlink" href="#arquitectura-de-un-programa" title="Permalink to this headline">¶</a></h2>
+<p>Los programas suelen estar divididos en diferentes unidades lógicas que interactuan y dependen unas de otras. A cada una de estas unidades lógicas en que subdividimos un programa se le suele llamar <strong>módulo</strong>. Según el tamaño y complejidad del programa, los módulos lógicos se podrán corresponder con un fichero concreto, o con un directorio completo repleto de ficheros, o en el extremo contrario, los módulos podrían ser cada una de las rutinas existentes en el único fichero de cierto programa, o cada una de las secciones diferenciadas de una función.</p>
+<p>La estructura de módulos que componen un programa, junto con las relaciones y dependencias que se establecen entre ellos es lo que se denomina la <em>arquitectura del programa</em>. Veamos un ejemplo, pongamos que tenemos un programa que calcula el sueldo que le corresponde cobrar a un trabajador de una empresa. Supongamos que nuestro programa utiliza unas rutinas, desarroladas anteriormente, que permiten calcular las retenciones de impuestos que corresponde aplicar. También utiliza otro grupo de programas que le permiten extraer los datos bancarios del trabajador. Esto hace que nuestro programa <em>dependa</em> del <em>módulo de cálculo de impuestos</em> y  del <em>módulo de datos bancarios</em>. A su vez nuestro programa podría constar de varios módulos: un módulo principal que proporciona el arranque y la estructura general del programa, otro módulo encargado de acceder y utilizar el módulo bancario, otro módulo que permite acceder al módulo de cálculos fiscales, un módulo que permite imprimir los resultados y un módulo encargado de enviar correos eléctronicos a los empleados. Si el programa lo estuvieramos desarrollando en Octave, cada uno de estos módulos se podría corresponder con una función desarrollada en un fichero <em>.m</em>.</p>
+</div>
+<div class="section" id="aquitectura-en-programacion-estructurada">
+<h2>Aquitectura en programación estructurada<a class="headerlink" href="#aquitectura-en-programacion-estructurada" title="Permalink to this headline">¶</a></h2>
+<p>En la programación estructurada los programas están construidos a base de subrutinas. El equivalente en <em>Octave</em> de las subrutinas son las funciones.</p>
+<p>La arquitectura más simple sería la de un programa que constara de una única subrutina. En <em>Octave</em> se trataría de un programa compuesto por una única función y un único fichero <em>.m</em>. Es habitual que los programas consten de varias funciones repartidas en uno o más ficheros y que dependen unas de otras. La dependencia hay que entenderla en el sentido de que entre las instrucciones utilizadas por algunas de estas funciones están llamadas a las otras funciones.</p>
+<p>Vamos a tratar de explicar la dependencia entre funciones con un ejemplo. Supongamos que desarrollamos una función que permite calcular la solución de un sistema de ecuaciones y que dicha función utiliza, entre sus instrucciones, la llamada a otra función que calcula la inversa de una matriz. Nuestra función utiliza, y por tanto depende de, la función que calcula la inversa. Si esa función cambia o falla, nuestra función se verá afectada. De hecho, las funciones predefinidas que utilizamos en los programas de <em>Octave</em> son funciones desarrolladas por otros y cuyos ficheros <em>.m</em> están guardados en algún lugar de la instalación de <em>Octave</em>. Nuestras programas <em>dependen</em> de ellas, en tanto las utilicen.</p>
+<p>Hay algunos principios generales que deben cumplir las dependencias entre módulos en la programación estructurada. Por ejemplo, no conviene establecer relaciones cíclicas entre módulos. No debe suceder que el módulo <em>A</em> dependa del módulo <em>B</em>, que a su vez depende del módulo <em>A</em>. Puede darse una relación cíclica con más intervinientes: El módulo <em>A</em> depende de <em>B</em>, quien a su vez depende del módulo <em>C</em> que depende del módulo <em>A</em>. Estas relaciones cíclicas pueden dar lugar a errores en el desarrollo de los programas y, en cualquier caso, llevan a arquitecturas difíciles de expandir o mantener.</p>
+<a class="reference internal image-reference" href="_images/StructuredProgramming.png"><img alt="StructuredProgramming" src="_images/StructuredProgramming.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="scripts-y-funciones-en-octave">
+<h2>Scripts y Funciones en Octave<a class="headerlink" href="#scripts-y-funciones-en-octave" title="Permalink to this headline">¶</a></h2>
+<p>Durante el curso aprendemos a utilizar tres maneras de interactuar con Octave: la consola, los <em>scripts</em> y las funciones.</p>
+<p>La manera más inmediata de operar Octave es a través de la <strong>consola</strong>. El funcionamiento es del tipo <em>petición-respuesta</em> habitual en los entornos de consola. El usuario teclea una instrucción válida de Octave en la consola, pulsa la tecla <em>return</em> y Octave muestra el resultado de la ejecución de la instrucción en la consola, o un mensaje de error si es que se ha producido alguno. Esto permite utilizar Octave como una calculadora científica avanzada y es uno de los puntos fuertes de Octave de cara a su utilización por ingenieros y técnicos en general.</p>
+<p>Otra forma de operar Octave es a través de los denominados <strong>scripts</strong>. La palabra <em>script</em> se traduce al castellano por <em>guión</em>, aunque en el ámbito de la programación es habitual utilizar la palabra original en inglés. Se trata de una serie de instrucciones dadas al ordenador y que queremos ejecutar una tras otra. Lo que se hace es crear un fichero <em>.m</em> y escribir las instrucciones que queremos que ejecute Octave. Para ejecutar un <em>script</em> desde la consola de Octave, tendremos que situarnos en el directorio donde está guardado el fichero <em>.m</em> del script, y teclear el nombre del fichero (sin la extensión <em>.m</em>). El resultado será que Octave irá ejecutando, una a una, las instrucciones contenidas en el fichero de script.</p>
+<p>Ejecutar un script es equivalente a ir ejecutando en la consola, una a una, las instrucciones que aparecen en el fichero <em>.m</em> del script. Esto implica que el <em>espacio de trabajo</em> del script, (las variables activas en memoria en cada momento), es el mismo que el de la consola. Si definimos una variable en el script, cuando termine la ejecución del mismo la variable estará en el espacio de trabajo. Análogamente, si tenemos una variable definida en el espacio de trabajo de la consola, podremos acceder a ella desde dentro del script.</p>
+<a class="reference internal image-reference" href="_images/pruebaws.png"><img alt="prueba workspace" src="_images/pruebaws.png" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Tip:</strong> La barra de herramientas de la ventana del editor de Octave tiene un botón para ejecutar el programa activo. Si pulsamos y pasamos a la ventana de la consola de comandos veremos que lo que hace es ejecutar el programa por consola. Los resultados que se obtienen o los mensajes de error que pudieran aparecer se mostrarán por la ventana de la consola. El comando de ejecución pasará a formar parte del historial de comandos y podremos acceder a él a través del comando <em>history</em> o de la tecla de cursor hacia arriba.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Tip:</strong> Cuando tecleamos un  programa en la ventana del editor de Octave y pulsamos ejecutar, si no estamos en el directorio del fichero <em>.m</em>, nos aparecerá una ventana ofreciéndonos cambiar el directorio de trabajo al directorio donde hayamos guardado el fichero <em>.m</em>.</p>
+</div>
+<p>La funciones, las <strong>function</strong>, son una forma más sofisticada de programar Octave. Se trata también de ficheros <em>.m</em> que contienen instrucciones de Octave, pero en este caso permiten programarse para recibir una serie de parámetros y devolver resultados. En el caso de las funciones, el espacio de trabajo de la función (sus variables activas en memoria en cada momento), no es el mismo que el espacio de trabajo de la consola. Si definimos una variable dentro de la función, cuando salgamos de la función la variable deja de existir. De la misma manera, si tenemos variables definidas en memoria en la consola desde la que llamamos a la función, una vez dentro de la función no tendremos acceso a dichas variables.</p>
+<p>El <strong>nombre del fichero</strong> es otro detalle importante a la hora de escribir los ficheros <em>.m</em> que guardan los scripts o las funciones. En el caso de los scripts no requieren nada especial, hay que utilizar para el script un nombre de fichero válido acabado en <em>.m</em>. En el caso de las funciones, en cambio, el nombre de la primera función que haya en el fichero tiene que coincidir con el nombre del fichero, sin la extensión <em>.m</em>.</p>
+<p>El formato de los ficheros también es un poco diferente. En el caso de los scripts no hay ningún requerimiento especial, simplemente iremos escribiendo en el fichero <em>.m</em> instrucciones válidas de Octave en líneas sucesivas, en el orden que queramos que se ejecuten. En las funciones es obligatorio que la primera instrucción del fichero diferente de un comentario, sea la denominada <em>signatura</em> de la función.</p>
+<p>La <strong>signatura</strong> de las funciones tiene que ser la primera instrucción, diferente de un comentario, en el fichero <em>.m</em> de la función. Consiste en la palabra <strong>function</strong>, seguida de la lista de valores devueltos entre corchetes, el signo igual, el nombre de la función y, entre paréntesis, la lista de parametros solicitados por la función y separados por comas. Es más difícil describirlo que escribirlo:</p>
+<div class="highlight-octave"><div class="highlight"><pre><span class="k">function</span><span class="w"> </span>[resultado1, resultado2] <span class="p">=</span><span class="w"> </span><span class="nf">nombreDeFuncion</span><span class="p">(</span>parametro1, parametro2, parametro3<span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Para utilizar la función, para llamarla, se utiliza la misma sintaxis que la de la <em>signatura</em> pero sin la palabra <em>function</em> al principio. Veamos un ejemplo de utilización de una función. La función <em>size()</em> predefinida de Octave, recibe como parámetro una matriz o vector y devuelve el número de filas y columnas que tiene. La signatura de la función es :</p>
+<div class="highlight-octave"><div class="highlight"><pre><span class="p">[</span><span class="n">filas</span><span class="p">,</span> <span class="n">columnas</span><span class="p">]</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para utilizar la función <em>size()</em> desde la consola, primero definimos una matriz y luego llamamos a la función, pasándole dicha matriz como argumento:</p>
+<a class="reference internal image-reference" href="_images/size.png"><img alt="size" src="_images/size.png" style="width: 400px;" /></a>
+<p>Hay que observar un par de detalles en el código anterior:</p>
+<blockquote>
+<div><ul class="simple">
+<li>El nombre de la variable que le pasamos a la función no tiene por qué coincidir con el nombre asignado a dicha variable en la signatura. Vemos que el parámetro que hemos pasado a la función es una variable llamada <em>A</em>, no <em>M</em> como pone en la signatura de la función. Eso da igual, la función espera recibir una variable del tipo matriz, da igual cómo se llame.</li>
+<li>El nombre de las variables en las que recibimos los valores devueltos por la función no tiene por qué coincidir con el nombre de la signatura. Nosotros hemos dicho a la función que nos devuelva los valores en unas variables que hemos llamado <em>m</em> y <em>n</em>, no <em>filas</em> y <em>columnas</em> como pone en la signatura de la función. Da igual, la función devuelve dos valores y nos los devolverá en las dos variables que pongamos entre corchetes, no importa el nombre que tengan.</li>
+</ul>
+</div></blockquote>
+<p>Los parámetros que pasamos a las funciones no tienen por qué ser variables, también pueden pasarse directamente los valores numéricos de los parámetros. También podemos pasar una operación que dé lugar al resultado deseado. Veamos un ejemplo utilizando la función predefinida <em>sind()</em> que recibe un ángulo en grados y devuelve el valor del seno de dicho ángulo (<em>sind</em> es <em>sin degrees</em>, por contraposición a la función <em>sin()</em> que recibe el parámetro del ángulo en radianes). En el ejemplo se utiliza tambiénla función <em>sin()</em> pasándole una operación basada en la constante predefinida <em>pi</em> de Octave.</p>
+<a class="reference internal image-reference" href="_images/params1.png"><img alt="parameters 1" src="_images/params1.png" style="width: 300px;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Cuestión de arquitectura</a><ul>
+<li><a class="reference internal" href="#los-lenguajes-de-programacion-y-sus-tipos">Los lenguajes de programación y sus tipos</a></li>
+<li><a class="reference internal" href="#arquitectura-de-un-programa">Arquitectura de un programa</a></li>
+<li><a class="reference internal" href="#aquitectura-en-programacion-estructurada">Aquitectura en programación estructurada</a></li>
+<li><a class="reference internal" href="#scripts-y-funciones-en-octave">Scripts y Funciones en Octave</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="semana1.html"
+                        title="previous chapter">Semana 1</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tipsso1.html"
+                        title="next chapter">Tips and tricks del sistema operativo</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/teoria1.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="tipsso1.html" title="Tips and tricks del sistema operativo"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="semana1.html" title="Semana 1"
+             >previous</a> |</li>
+        <li><a href="index.html">Introducción a la programación con Octave 1.0 documentation</a> &raquo;</li>
+          <li><a href="semana1.html" >Semana 1</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Santiago Higuera.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -54,7 +54,7 @@ La ruta del directorio actual de trabajo se puede mostrar en consola con el coma
 
 .. note:: **pwd** es el acrónimo de *print working directory*
 
-.. note:: **Directorio** es cada una de las divisiones lógicas que se hacen en los sistemas de archivos y que pueden contener otros archivos o directorios. Desde la aparición de los interfaces gráficos para los sistemas operativos se les empezó a denominar también **carpetas** por analogía con las carpetas de los archivos físicos. El icono que se suele utilizar para representar un directorio de un disco es el de una carpeta. En este curso utilizaremos indistintamente las palabras directorio o carpeta para referirnos a ellos. También es habitual la denominación *subdirectorios*, cuando queremos referirnos a los directorios que están contenidos en uno concreto: *'Los subdirectorios del directorio 'programs', que en terminos gráficos serían las carpetas que están contenidas en la carpeta 'programs'*.
+.. note:: **Directorio** es cada una de las divisiones lógicas que se hacen en los sistemas de archivos y que pueden contener otros archivos o directorios. Desde la aparición de los interfaces gráficos para los sistemas operativos se los empezó a denominar también **carpetas** por analogía con las carpetas de los archivos físicos. El icono que se suele utilizar para representar un directorio de un disco es el de una carpeta. En este curso utilizaremos indistintamente las palabras directorio o carpeta para referirnos a ellos. También es habitual la denominación *subdirectorios*, cuando queremos referirnos a los directorios que están contenidos en uno concreto: *'Los subdirectorios del directorio 'programs', que en terminos gráficos serían las carpetas que están contenidas en la carpeta 'programs'*.
 
 El contenido del directorio actual lo podemos mostrar en la consola tecleando el comando **dir** o el comando **ls**, según prefiramos el estilo *windows* o el estilo *linux*. Pruebe una vez más a teclear el comando en la ventana de comandos y a comprobar que el contenido de carpetas y archivos que muestra corresponde al contenido del directorio actual mostrado por la ventana **Explorador de archivos**.
 
@@ -64,7 +64,7 @@ Podemos cambiar el **directorio de trabajo** desde la consola tecleando el coman
  
 - **cd ruta_completa**: Cambia el directorio de trabajo actual a uno especificado por su ruta completa.
 
-- **cd ..**: Cambia al directorio *padre* del directorio actual. El directorio *padre* es el directorio que contiene al directorio actual.
+- **cd ..**: (*cd punto punto*)Cambia al directorio *padre* del directorio actual. El directorio *padre* es el directorio que contiene al directorio actual.
 
 .. tip:: 
 	Pruebe a teclear varios cambios de directorios a través de la consola. Conviene ejercitarse en el manejo de la consola para moverse por los directorios del ordenador. No solo es eficiente, sino que además es imprescindible en determinados entornos de trabajo en los que no es posible disponer de interface gráfico para Octave. También es importante saber manejar nombres de archivos y sus rutas de acceso a la hora de trabajar en *lectura-escritura* de ficheros. A medida que teclea los comandos de cambio de directorio, observe como cambia el contenido de los desplegables del directorio actual y de la ventana del Explorador de archivos.
