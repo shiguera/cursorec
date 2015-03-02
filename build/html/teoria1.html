@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Introducción a la programación con Octave 1.0 documentation" href="index.html" />
     <link rel="up" title="Semana 1" href="semana1.html" />
-    <link rel="next" title="Tips and tricks del sistema operativo" href="tipsso1.html" />
+    <link rel="next" title="Tips and tricks del sistema operativo 1" href="tipsso1.html" />
     <link rel="prev" title="Semana 1" href="semana1.html" /> 
   </head>
   <body>
@@ -36,7 +36,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="tipsso1.html" title="Tips and tricks del sistema operativo"
+          <a href="tipsso1.html" title="Tips and tricks del sistema operativo 1"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="semana1.html" title="Semana 1"
@@ -51,8 +51,7 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <p>% teoria1.rst</p>
-<div class="section" id="cuestion-de-arquitectura">
+  <div class="section" id="cuestion-de-arquitectura">
 <h1>Cuestión de arquitectura<a class="headerlink" href="#cuestion-de-arquitectura" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="los-lenguajes-de-programacion-y-sus-tipos">
 <h2>Los lenguajes de programación y sus tipos<a class="headerlink" href="#los-lenguajes-de-programacion-y-sus-tipos" title="Permalink to this headline">¶</a></h2>
@@ -72,13 +71,13 @@
 <div class="section" id="arquitectura-de-un-programa">
 <h2>Arquitectura de un programa<a class="headerlink" href="#arquitectura-de-un-programa" title="Permalink to this headline">¶</a></h2>
 <p>Los programas suelen estar divididos en diferentes unidades lógicas que interactuan y dependen unas de otras. A cada una de estas unidades lógicas en que subdividimos un programa se le suele llamar <strong>módulo</strong>. Según el tamaño y complejidad del programa, los módulos lógicos se podrán corresponder con un fichero concreto, o con un directorio completo repleto de ficheros, o en el extremo contrario, los módulos podrían ser cada una de las rutinas existentes en el único fichero de cierto programa, o cada una de las secciones diferenciadas de una función.</p>
-<p>La estructura de módulos que componen un programa, junto con las relaciones y dependencias que se establecen entre ellos es lo que se denomina la <em>arquitectura del programa</em>. Veamos un ejemplo, pongamos que tenemos un programa que calcula el sueldo que le corresponde cobrar a un trabajador de una empresa. Supongamos que nuestro programa utiliza unas rutinas, desarroladas anteriormente, que permiten calcular las retenciones de impuestos que corresponde aplicar. También utiliza otro grupo de programas que le permiten extraer los datos bancarios del trabajador. Esto hace que nuestro programa <em>dependa</em> del <em>módulo de cálculo de impuestos</em> y  del <em>módulo de datos bancarios</em>. A su vez nuestro programa podría constar de varios módulos: un módulo principal que proporciona el arranque y la estructura general del programa, otro módulo encargado de acceder y utilizar el módulo bancario, otro módulo que permite acceder al módulo de cálculos fiscales, un módulo que permite imprimir los resultados y un módulo encargado de enviar correos eléctronicos a los empleados. Si el programa lo estuvieramos desarrollando en Octave, cada uno de estos módulos se podría corresponder con una función desarrollada en un fichero <em>.m</em>.</p>
+<p>La estructura de módulos que componen un programa, junto con las relaciones y dependencias que se establecen entre ellos es lo que se denomina la <em>arquitectura del programa</em>. Veamos un ejemplo, pongamos que tenemos un programa que calcula el momento flector en una viga. Supongamos que nuestro programa utiliza unas rutinas, desarrolladas anteriormente, que permiten calcular el momento flector cuando la viga es biapoyada y otro programa que calcula el momento flector cuando la viga es empotrada. Esto hace que nuestro programa <em>dependa</em> del <em>módulo de cálculo de la viga biapoyada</em> y  del <em>módulo de cálculo de la viga empotrada</em>. A su vez nuestro programa podría constar de varios módulos: un módulo principal que proporciona el arranque y la estructura general del programa, otro módulo encargado de acceder y utilizar el módulo de la viga apoyada, otro módulo que permite acceder al módulo de la viga empotrada, un módulo que permite imprimir los resultados y un módulo encargado de hacer un gráfico con el resultado. Si el programa lo estuvieramos desarrollando en Octave, cada uno de estos módulos se podría corresponder con una función desarrollada en un fichero <em>.m</em>.</p>
 </div>
 <div class="section" id="aquitectura-en-programacion-estructurada">
 <h2>Aquitectura en programación estructurada<a class="headerlink" href="#aquitectura-en-programacion-estructurada" title="Permalink to this headline">¶</a></h2>
 <p>En la programación estructurada los programas están construidos a base de subrutinas. El equivalente en <em>Octave</em> de las subrutinas son las funciones.</p>
 <p>La arquitectura más simple sería la de un programa que constara de una única subrutina. En <em>Octave</em> se trataría de un programa compuesto por una única función y un único fichero <em>.m</em>. Es habitual que los programas consten de varias funciones repartidas en uno o más ficheros y que dependen unas de otras. La dependencia hay que entenderla en el sentido de que entre las instrucciones utilizadas por algunas de estas funciones están llamadas a las otras funciones.</p>
-<p>Vamos a tratar de explicar la dependencia entre funciones con un ejemplo. Supongamos que desarrollamos una función que permite calcular la solución de un sistema de ecuaciones y que dicha función utiliza, entre sus instrucciones, la llamada a otra función que calcula la inversa de una matriz. Nuestra función utiliza, y por tanto depende de, la función que calcula la inversa. Si esa función cambia o falla, nuestra función se verá afectada. De hecho, las funciones predefinidas que utilizamos en los programas de <em>Octave</em> son funciones desarrolladas por otros y cuyos ficheros <em>.m</em> están guardados en algún lugar de la instalación de <em>Octave</em>. Nuestras programas <em>dependen</em> de ellas, en tanto las utilicen.</p>
+<p>Vamos a tratar de explicar la dependencia entre funciones con un ejemplo. Supongamos que desarrollamos una función que permite calcular la solución de un sistema de ecuaciones y que dicha función utiliza, entre sus instrucciones, la llamada a otra función que calcula la inversa de una matriz. Nuestra función utiliza, y por tanto depende de, la función que calcula la inversa de una matriz. Si la función <em>inversa()</em> cambia o falla, nuestra función se verá afectada. De hecho, las funciones predefinidas que utilizamos en los programas de <em>Octave</em> son funciones desarrolladas por otros y cuyos ficheros <em>.m</em> están guardados en algún lugar de la instalación de <em>Octave</em>. Nuestras programas <em>dependen</em> de ellas, en tanto las utilicen.</p>
 <p>Hay algunos principios generales que deben cumplir las dependencias entre módulos en la programación estructurada. Por ejemplo, no conviene establecer relaciones cíclicas entre módulos. No debe suceder que el módulo <em>A</em> dependa del módulo <em>B</em>, que a su vez depende del módulo <em>A</em>. Puede darse una relación cíclica con más intervinientes: El módulo <em>A</em> depende de <em>B</em>, quien a su vez depende del módulo <em>C</em> que depende del módulo <em>A</em>. Estas relaciones cíclicas pueden dar lugar a errores en el desarrollo de los programas y, en cualquier caso, llevan a arquitecturas difíciles de expandir o mantener.</p>
 <a class="reference internal image-reference" href="_images/StructuredProgramming.png"><img alt="StructuredProgramming" src="_images/StructuredProgramming.png" style="width: 400px;" /></a>
 </div>
@@ -144,7 +143,7 @@
                         title="previous chapter">Semana 1</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="tipsso1.html"
-                        title="next chapter">Tips and tricks del sistema operativo</a></p>
+                        title="next chapter">Tips and tricks del sistema operativo 1</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/teoria1.txt"
@@ -174,7 +173,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="tipsso1.html" title="Tips and tricks del sistema operativo"
+          <a href="tipsso1.html" title="Tips and tricks del sistema operativo 1"
              >next</a> |</li>
         <li class="right" >
           <a href="semana1.html" title="Semana 1"

@@ -1,7 +1,22 @@
-% tipsoctave.rst
-
 Tips and tricks Octave 1
 ========================
+
+Acceder a los comandos del historial con el cursor
+--------------------------------------------------
+Una vez tecleados algunos comandos en la consola los podremos recuperar pulsando la tecla de cursor hacia arriba. Pulsando sucesivamente podremos recuperar el comando buscado y, o bien ejecutarlo pulsando *return*, o bien editarlo y modificarlo antes de una nueva ejecución.
+
+Esta opción es muy útil para volver a dar valor a variables matriciales y cosas así, o simplemente para agilizar la ejecución de llamadas a funciones realizadas con anterioridad.
+
+Ayuda a teclear comandos
+------------------------
+Cuando tecleamos comandos en la consola de Octave podemos utilizar la tecla del tabulador para que termine de completarse un comando parcialmente tecleado. Si solo hay una opción posible, el comando se completará. Si hay más de una opción, al teclear el tabulador por segunda vez nos mostrará las distintas opciones disponibles. 
+
+En el ejemplo que se muestra en la figura se tecleó '*size*' y dos veces el tabulador, obteniendo las distintas funciones disponibles que empiezan por '*size*':
+
+.. image:: _static/tabulador.png
+   :width: 400px
+   :alt: tabulador
+
 
 Comprobación de gráficos
 ------------------------

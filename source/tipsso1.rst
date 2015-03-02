@@ -1,6 +1,3 @@
-% tipsso.rst
-
-
 Tips and tricks del sistema operativo 1
 =======================================
 

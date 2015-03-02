@@ -1,5 +1,3 @@
-% teoria1.rst
-
 Cuestión de arquitectura
 ========================
 
