@@ -13,6 +13,7 @@ Contents:
 
    intro.rst
    semana1.rst
+   semana2.rst
    
 
 Indices and tables

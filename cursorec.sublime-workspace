@@ -24,15 +24,46 @@
 	"buffers":
 	[
 		{
-			"contents": "% teoria1.rst\n\nCuestión de arquitectura\n========================\n\nLos lenguajes de programación y sus tipos\n-----------------------------------------\n\nUn lenguaje de programación es un lenguaje formal creado para transmitir instrucciones a un ordenador. Hay numerosos lenguajes de programación de ordenadores. Los lenguajes proporcionan conceptos que permiten razonar en términos abstractos sobre los problemas a resolver. Hay diferentes formas de abordar el problema de transmitir instrucciones a un ordenador. A lo largo de la historia de la programación han ido surgiendo diferentes modelos de programación, plasmados en lenguajes de programación concretos y que han dado lugar a una división de los lenguajes de programación según el modelo que utilizan. A dicho modelo de programación se le suele denominar el *paradigma* de programación utilizado por el lenguaje.\n\nEn los **lenguajes declarativos** no se le dice al ordenador cómo resolver el problema, lo que se hace es describir el problema, siendo una instancia posterior quién utilizará esa información para calcular la solución. Un ejemplo de este tipo de lenguajes son los lenguajes utilizados para describir documentos, por ejemplo. Es el caso del *HTML* y del *XML*. Se describe el documento y el ordenador utilizará algún tipo de interprete del lenguaje para crear el documento en cuestión. El ejemplo que se muestra a continuación es el de un documento muy simple creado en lenguaje *HTML*:\n\n.. image:: _static/htmlcode.png\n   :width: 400px\n   :alt: octavegui\n\nMostramos a continuación cómo se interpreta ese código al utilizar el navegador *Chrome*. Las páginas WEB que acostumbramos a utilizar están escritas en lenguaje *HTML*. Los navegadores que utilizamos son intérpretes del lenguaje *HTML*.\n\n.. image:: _static/htmlbrowsed.png\n   :width: 400px\n   :alt: octavegui\n\nEstas líneas que estás leyendo, están escritas en el lenguaje `Sphinx <http://sphinx-doc.org/index.html>`_,  que es un lenguaje declarativo pensado para escribir este tipo de documentos. El interprete del lenguaje lo convierte posteriormente en código *HTML*, que probablemente es la versión que estás leyendo, aunque podría ser también que estuvieras leyendo la versión *pdf* generada por el interprete que hay en el portal donde está colgada esta documentación, y que permite transcribir los documentos a formato *pdf*, que es a su vez otro lenguaje declarativo para describir documentos.\n\nExisten otros lenguajes declarativos que no están destinados a describir documentos o juegos de datos, sino a obtener la solución de problemas concretos de computación. Merece la pena destacar aquí el *SQL*, lenguaje comúnmente utilizado en el acceso a las bases de datos. Otro tipo particular de lenguajes declarativos son los lenguajes de programación *funcional*, como *Lisp*, *Haskell* o *Scala*.\n\nPor otra parte están los **lenguajes imperativos**, que, por contraposición a los lenguajes declarativos, describen detalladamente las instrucciones que tiene que realizar el computador en cada momento para llegar a la solución del problema a resolver. \n\nDentro de los lenguajes del tipo *imperativo*, un grupo importante lo constituyen los lenguajes basados en la **programación estructurada**. La *programación estructurada* es un paradigma de programación que divide los programas en rutinas y subrutinas, y que utiliza solamente tres estructuras: secuencia, selección (if y switch) e iteración (bucles for y while). Dentro de la programación estructurada es donde se encuadra el lenguaje *m* utilizado por **Octave** y **Matlab**.\n\nOtro grupo muy importante de lenguajes de programación imperativa, (otro paradigma de programación), lo constituyen los lenguajes de **programación orientada a objetos**. En estos lenguajes se definen los denominados *objetos* que tienen propiedades y métodos mediante los cuales pueden ser manipulados. Dentro de la programación orientada a objetos destacan el lenguaje *C++* (se lée *C plus plus*) y el lenguaje *Java*.\n\nExisten también lenguajes que pueden ser utilizados bajo distintos paradigmas de programación, lenguajes *multi-paradigma*. En general, casi todos los lenguajes permiten formas de utilización mixtas entre unos paradigmas y otros, si bien suelen estar más pensados para un paradigma de programación concreto. Dentro de los lenguajes *multi-paradigma* vamos a destacar aquí el lenguaje *python*, que permite abordar los programas desde un punto de vista de programación estruturada, como programación orientada a objetos o como programación funcional.\n\nArquitectura de un programa\n---------------------------\nLos programas suelen estar divididos en diferentes unidades lógicas que interactuan y dependen unas de otras. A cada una de estas unidades lógicas en que subdividimos un programa se le suele llamar **módulo**. Según el tamaño y complejidad del programa, los módulos lógicos se podrán corresponder con un fichero concreto, o con un directorio completo repleto de ficheros, o en el extremo contrario, los módulos podrían ser cada una de las rutinas existentes en el único fichero de cierto programa.\n\nLa estructura de módulos que componen un programa, junto con las relaciones y dependencias que se establecen entre ellos es lo que se denomina la arquitectura del programa. Veamos un ejemplo, pongamos que tenemos un programa que calcula el sueldo que le corresponde cobrar a un trabajador de una empresa. Supongamos que nuestro programa utiliza unas rutinas desarroladas anteriormente que permiten calcular las retenciones de impuestos que corresponde aplicar. También utiliza otro grupo de programas que le permiten extraer los datos bancarios del trabajador. Esto hace que nuestro programa *dependa* del *módulo de cálculo de impuestos* y  del *módulo de datos bancarios*. A su vez nuestro programa podría constar de varios módulos: un módulo principal que proporciona el arranque y la estructura general del programa, otro módulo encargado de acceder y utilizar el módulo bancario, otro módulo que permite acceder al módulo de cálculos fiscales, un módulo que permite imprimir los resultados y un módulo encargado de enviar correos eléctronicos a los empleados.\n\nAquitectura en programación estructurada\n----------------------------------------\nEn la programación estructurada los programas están construidos a base de subrutinas. El equivalente en *Octave* de las subrutinas son las funciones.\n\nLa arquitectura más simple sería la de un programa que constara de una única subrutina. En *Octave* se trataría de un programa compuesto por una única función y un único fichero *.m*. Es habitual que los programas consten de varias funciones repartidas en uno o más ficheros y que dependen unas de otras. La dependencia hay que entenderla en el sentido de que entre las instrucciones utilizadas por algunas de estas funciones están llamadas a las otras funciones.\n\nVamos a tratar de explicar la dependencia entre funciones con un ejemplo. Supongamos que desarrollamos una función que permite calcular la solución de un sistema de ecuaciones y que dicha función utiliza, entre sus instrucciones, la llamada a otra función que calcula la inversa de una matriz. Nuestra función utiliza, y por tanto depende, de la función que calcula la inversa. Si esa función cambia o falla, nuestra función se verá afectada. De hecho, las funciones predefinidas que utilizamos en los programas de *Octave* son funciones desarrolladas por otros y cuyos ficheros *.m* están guardados en algún lugar de la instalación de *Octave*. Nuestras funciones *dependen* de ellas, en tanto las utilicen.\n\nHay algunos principios generales que deben cumplir las dependencias entre módulos en la programación estructurada. Por ejemplo, no conviene establecer relaciones cíclicas entre módulos. No debe suceder que el módulo *A* dependa del módulo *B*, que a su vez depende del módulo *A*. Puede darse una relación cíclica con más intervinientes: El módulo *A* depende de *B*, quien a su vez depende del módulo *C* que depende del módulo *A*. Estas relaciones cíclicas pueden dar lugar a errores en el desarrollo de los programas y, en cualquier caso, llevan a arquitecturas difíciles de expandir o mantener.\n\n\n\n\n\n\n\n\n\n",
 			"file": "source/teoria1.rst",
-			"file_size": 5949,
-			"file_write_time": 130696457388807931,
 			"settings":
 			{
-				"buffer_size": 8180,
+				"buffer_size": 16349,
 				"line_ending": "Unix",
 				"name": "% teoria1.rst"
+			}
+		},
+		{
+			"file": "source/tipsoctave1.rst",
+			"settings":
+			{
+				"buffer_size": 2299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/tipsso1.rst",
+			"settings":
+			{
+				"buffer_size": 3891,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/semana1.html",
+			"settings":
+			{
+				"buffer_size": 3265,
+				"line_ending": "Unix",
+				"name": "# semana1.html"
+			}
+		},
+		{
+			"file": "source/m/prueba.m",
+			"settings":
+			{
+				"buffer_size": 35,
+				"line_ending": "Unix",
+				"name": "% Script de pruebas"
 			}
 		},
 		{
@@ -480,7 +511,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -489,31 +520,147 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8180,
+						"buffer_size": 16349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8172,
-								8172
+								16146,
+								16146
 							]
 						],
 						"settings":
 						{
 							"auto_name": "% teoria1.rst",
+							"parser": "github",
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage",
+							"target": "browser"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/tipsoctave1.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1353.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/tipsso1.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								821,
+								821
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/semana1.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# semana1.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 4,
+					"file": "source/m/prueba.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"auto_name": "% Script de pruebas",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "source/ejemplo.html",
 					"semi_transient": false,
 					"settings":
@@ -537,11 +684,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 6,
 					"file": "source/intro.rst",
 					"semi_transient": false,
 					"settings":
@@ -566,7 +713,7 @@
 						"translation.y": 561.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
