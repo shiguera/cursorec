@@ -20,14 +20,18 @@ En Windows 7 podemos accedera la consola mediante **Inicio> Todos los programas>
 
 Puedes echar un vistazo al siguiente artículo que habla de cómo acceder a la consola y cómo utilizar algunos de sus comandos en un sistema operativo Windows.
 
-`Comandos CMD, la consola de Windows también existe <http://www.muycomputer.com/2014/07/30/comandos-cmd>`_
+`Comandos CMD, la consola de Windows también existe <http://goo.gl/pUEc2n>`_
 
 El path del sistema
 -------------------
 
-**PATH** es una variable de entorno de los sistemas operativos. El contenido de la variable *path* es una lista de directorios. Estos directorios son las rutas en las cuales el intérprete de comandos debe buscar los programas a ejecutar. Cada vez que ordenamos ejecutar un comando, el sistema operativo buscará el programa correspondiente en el directorio actual y en la lista de directorios que hay guardada en la variable *path*.
+**PATH** es una variable de entorno de los sistemas operativos. El contenido de la variable *path* es una lista de directorios. Estos directorios son las rutas en las cuales el intérprete de comandos debe buscar los programas a ejecutar. Cada vez que ordenamos ejecutar un comando, el sistema operativo buscará el programa correspondiente en el directorio actual y en la lista de directorios que hay guardados en la variable *path*.
 
 Para que funcionen bien algunos programas es necesario incluir su directorio en la variable *path*. Es el caso de Octave. 
+
+En Windows puedes ver el contenido de la variable *path* abriendo una consola y tecleando el comando *path*. También puedes ver o modificar el contenido a través de herramientas gráficas. Echa un vistazo al siguiente artículo, donde se explica cómo hacerlo.
+
+`How to set the path in Windows 7 <http://goo.gl/xlLyu6>`_
 
 .. note:: El interprete de Octave también tiene su propia variable *path*, que es una lista de directorios donde buscará los ficheros *.m* que ordenamos ejecutar desde la consola. Podemos ver el contenido de la variable *path* del interprete de Octave tecleando *path* en la consola. También podemos modificar la variable *path*. Para conocer más acerca del uso de la función *path()* teclea en consola *help path*.
 
