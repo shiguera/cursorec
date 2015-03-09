@@ -29,5 +29,5 @@ El path del sistema
 
 Para que funcionen bien algunos programas es necesario incluir su directorio en la variable *path*. Es el caso de Octave. 
 
-.. note:: El interprete de Octave también tiene su propia variable *path*, que es una lista de directorios donde buscará los ficheros *.m* que ordenamos ejecutar desde la consola. Podemos ver el contenido de la variable *path* del interprete de Octave tecleando *path* en la consola. También podemos modificar la variable *path* Para conocer más acerca del uso de la función *path()* teclea en consola *help path*.
+.. note:: El interprete de Octave también tiene su propia variable *path*, que es una lista de directorios donde buscará los ficheros *.m* que ordenamos ejecutar desde la consola. Podemos ver el contenido de la variable *path* del interprete de Octave tecleando *path* en la consola. También podemos modificar la variable *path*. Para conocer más acerca del uso de la función *path()* teclea en consola *help path*.
 

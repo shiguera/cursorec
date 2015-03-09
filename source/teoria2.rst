@@ -1,7 +1,7 @@
 Unidades de medida y orden de magnitud
 ======================================
 
-Vamos a comenzar el análisis del artículo de Dewdney, y lo vamos a hacer empezando por las 'estampas'. Vamos a analizar el anuncio que sale en la cuarta página referente un ordenador IBM que se vendía por aquellas fechas. El artículo es de diciembre de 1984 y el ordenador que se presenta es uno de los pocos ordenadores personales que se podían comprar. 
+Vamos a comenzar el análisis del artículo de Dewdney, y lo vamos a hacer empezando por las 'estampas'. Vamos a analizar el anuncio que sale en la cuarta página referente un ordenador IBM que se vendía por aquellas fechas. El artículo es de diciembre de 1984 y el ordenador que se presenta es uno de los pocos ordenadores personales que se podía comprar. 
 
 .. image:: _static/ibmpc1.png
    :width: 400px
@@ -43,7 +43,7 @@ Volvamos al anuncio del *IBM PC*. En el cuadro resumen de características podem
 
 - **Pantalla:** Las pantallas podían trabajar en modo caracteres, similar a la consola de Octave, o en modo gráfico. En el caso de trabajar en modo caracteres se podía utilizar una pantalla 40 o de 80 caracteres de ancho. En el modo gráfico se podían utilizar gráficos de 320x200 puntos, con 16 colores posibles para los puntos, o con gráficos de 640x200 puntos, con un máximo de 4 colores posibles. Las pantallas actuales para ordenadores funcionan siempre en modo gráfico, con resoluciones de 1920x1080 puntos y con 16 millones de colores posibles.
 
-.. note:: Cada punto iluminado de la pantalla se denomina **pixel**. La *resolución* de una pantalla es el número de puntos que puede dibujar. Hay otro parámetro que marca la calidad y legibilidad de una pantalla, la **densidad de pixels**, que se mide en una unidad denominada **dpi**, *dots per inch*, puntos por pulgada. La unidad de densidad *dpi* es el número de pixels que hay en dos centímetros y medio de ancho de pantalla. No se ve igual una imagen de 100x100 puntos en una pantalla que tenga 10 centímetros de ancho que en una que tenga 20 centímetros de ancho. Los móviles, por ejemplo, tienen resoluciones de 800x600 pixels, por ejemplo, con una densidad alta, por ejemplo 160 puntos pos pulgada, lo que favorece su legibilidad. 
+.. note:: Cada punto iluminado de la pantalla se denomina **pixel**. La *resolución* de una pantalla es el número de puntos que puede dibujar. Hay otro parámetro que marca la calidad y legibilidad de una pantalla, la **densidad de pixels**, que se mide en una unidad denominada **dpi**, *dots per inch*, puntos por pulgada. La unidad de densidad *dpi* es el número de pixels que hay en dos centímetros y medio de ancho de pantalla. No se ve igual una imagen de 100x100 puntos en una pantalla que tenga 10 centímetros de ancho que en una que tenga 20 centímetros de ancho. Los móviles tienen resoluciones de 800x600 pixels, por ejemplo, con una densidad alta, por ejemplo 160 puntos por pulgada, lo que favorece su legibilidad. 
 
 
 
