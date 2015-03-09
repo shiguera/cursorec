@@ -1,7 +1,7 @@
 Unidades de medida y orden de magnitud
 ======================================
 
-Vamos a comenzar el análisis del artículo de Dewdney, y lo vamos a hacer empezando por las 'estampas'. Vamos a analizar el anuncio que sale en la cuarta página referente un ordenador IBM que se vendía por aquellas fechas. El artículo es de diciembre de 1984 y el ordenador que se presenta es uno de los pocos ordenadores personales que se podía comprar. 
+Vamos a comenzar el análisis del artículo de Dewdney, y lo vamos a hacer empezando por las 'estampas'. Es curioso ver los anuncios comerciales que aparecen. Se nota el paso del tiempo. Vamos a analizar el anuncio que sale en la cuarta página referente un ordenador IBM que se vendía por aquellas fechas. El artículo es de diciembre de 1984 y el ordenador que se presenta es uno de los pocos ordenadores personales que se podía comprar. 
 
 .. image:: _static/ibmpc1.png
    :width: 400px
@@ -45,7 +45,7 @@ Volvamos al anuncio del *IBM PC*. En el cuadro resumen de características podem
 
 .. note:: Cada punto iluminado de la pantalla se denomina **pixel**. La *resolución* de una pantalla es el número de puntos que puede dibujar. Hay otro parámetro que marca la calidad y legibilidad de una pantalla, la **densidad de pixels**, que se mide en una unidad denominada **dpi**, *dots per inch*, puntos por pulgada. La unidad de densidad *dpi* es el número de pixels que hay en dos centímetros y medio de ancho de pantalla. No se ve igual una imagen de 100x100 puntos en una pantalla que tenga 10 centímetros de ancho que en una que tenga 20 centímetros de ancho. Los móviles tienen resoluciones de 800x600 pixels, por ejemplo, con una densidad alta, por ejemplo 160 puntos por pulgada, lo que favorece su legibilidad. 
 
-- **Procesador:** El procesador va recibiendo datos a través del llamado *bus* a intervalos marcados por un reloj de frecuencia determinada. El anuncio habla del procesador Intel 8088 de 16 bits, el reloj seguramente tendría 4.77 MHz. En cada impulso del reloj entraban 16 bits al procesador (ver nota). Podríamos establecer un parámetro bits/segundo, resultando que el Intel 8088 procesaba 4.77e6*16= 76.32e6 b/s. El ordenador en el que estoy trabajando tiene un procesador Intel de 64 bits a 2.50GHz. Si calculamos el mismo parámetro tendríamos 2500e6*64=160000e6 b/s, o sea, la capacidad de procesamiento de mi ordenador medida con este parámetro es más de dos mil veces la del IBM PC.   
+- **Procesador:** El procesador va recibiendo datos a través del llamado *bus* a intervalos marcados por un reloj de frecuencia determinada. El anuncio habla del procesador Intel 8088 de 16 bits, el reloj seguramente tendría 4.77 MHz. En cada impulso del reloj entraban 16 bits al procesador (ver nota). Podríamos establecer un parámetro bits/segundo, resultando que el Intel 8088 procesaba 4.77e6*16= 76.32e6 b/s. El ordenador en el que estoy trabajando tiene un procesador Intel de 64 bits a 2.50GHz. Si calculamos el mismo parámetro tendríamos 2500e6*64=160000e6 b/s, o sea, la capacidad de procesamiento de mi ordenador, medida con este parámetro, es más de dos mil veces la del IBM PC.   
 
 .. note:: En realidad el bus externo del procesador Intel 8088 era de ocho bits, eran los registros del procesador los que eran de 16 bits. (Fuente `Wikipedia <http://en.wikipedia.org/wiki/Intel_8088>`_)
 
