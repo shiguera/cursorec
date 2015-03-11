@@ -25,7 +25,7 @@ Pero antes de analizar las características de ese ordenador, vamos a repasar un
 
 - **Gigabyte**: Un *gigabyte*, o un **giga** como se suele abreviar, equivale a mil millones de bytes, o lo que es lo mismo, mil libros de 250 páginas cada uno.
 
-- **Terabyte**: Un *terabyte*, o **tera** como se suele abreviar, equivale a mil megas, un millón de millones de bytes, 10^12 bytes, un millón de libros de 250 páginas cada uno.
+- **Terabyte**: Un *terabyte*, o **tera** como se suele abreviar, equivale a mil gigas, un millón de millones de bytes, 10^12 bytes, un millón de libros de 250 páginas cada uno.
 
 Volvamos al anuncio del *IBM PC*. En el cuadro resumen de características podemos leer lo siguiente:
 
@@ -39,7 +39,7 @@ Volvamos al anuncio del *IBM PC*. En el cuadro resumen de características podem
 
 - **Diskette:** Para almacenar de manera definitiva datos y programas se utilizaban los denominados *diskettes*, que era un disco magnético de 5.25 pulgadas de diámetro. Tenían una capacidad, en aquel momento de 360 kB, utilizando las dos caras del disco. En cada disco se podía guardar el eqivalente a 90 folios escritos. Los discos actuales, denominados *DVD*, tienen capacidades de 4 gigas, o sea, unas once mil veces más.
 
-- **Disco duro:** El ordenador del anuncio no tenía disco duro. Sí que había modelos parecidos con disco duro. Empezaron siendo de 10 megabytes y enseguida pasaron a 20 megabytes. El equivalente a cinco mil folios escritos. El dsico duro del ordenador que estoy utilizando tiene 1 **terabyte**, un millón de libros de doscientas cincuenta páginas, cincuenta mil veces más que los discos duros de entonces.
+- **Disco duro:** El ordenador del anuncio no tenía disco duro. Sí que había modelos parecidos con disco duro. Empezaron siendo de 10 megabytes y enseguida pasaron a 20 megabytes. El equivalente a cinco mil folios escritos. El disco duro del ordenador que estoy utilizando tiene 1 **terabyte**, un millón de libros de doscientas cincuenta páginas, cincuenta mil veces más que los discos duros de entonces.
 
 - **Pantalla:** Las pantallas podían trabajar en modo caracteres, similar a la consola de Octave, o en modo gráfico. En el caso de trabajar en modo caracteres se podía utilizar una pantalla 40 o de 80 caracteres de ancho. En el modo gráfico se podían utilizar gráficos de 320x200 puntos, con 16 colores posibles para los puntos, o con gráficos de 640x200 puntos, con un máximo de 4 colores posibles. Las pantallas actuales para ordenadores funcionan siempre en modo gráfico, con resoluciones de 1920x1080 puntos y con 16 millones de colores posibles para cada ppunto.
 
