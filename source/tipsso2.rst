@@ -1,5 +1,5 @@
-Tips and tricks del sistema operativo 2
-=======================================
+Tips del sistema operativo 2: la consola y el path
+==================================================
 
 La consola del sistema operativo
 --------------------------------

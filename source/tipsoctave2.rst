@@ -1,8 +1,6 @@
-Tips and tricks Octave 2
-========================
+Tips Octave 2: Octave en las redes sociales
+===========================================
 
-Octave en las redes sociales
-----------------------------
 
 .. image:: _static/octavedoc.png
    :width: 250px

@@ -1,5 +1,5 @@
-Unidades de medida y orden de magnitud
-======================================
+Teoría de programación: Unidades de medida y orden de magnitud
+==============================================================
 
 Vamos a comenzar el análisis del artículo de Dewdney, y lo vamos a hacer empezando por las 'estampas'. Es curioso ver los anuncios comerciales que aparecen. Se nota el paso del tiempo. Vamos a analizar el anuncio que sale en la cuarta página referente un ordenador IBM que se vendía por aquellas fechas. El artículo es de diciembre de 1984 y el ordenador que se presenta es uno de los pocos ordenadores personales que se podía comprar. 
 

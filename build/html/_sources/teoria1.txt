@@ -1,5 +1,5 @@
-Cuestión de arquitectura
-========================
+Teoría de programación: Cuestión de arquitectura
+================================================
 
 Los lenguajes de programación y sus tipos
 -----------------------------------------

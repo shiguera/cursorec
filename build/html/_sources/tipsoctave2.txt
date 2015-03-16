@@ -1,14 +1,12 @@
-Tips and tricks Octave 2
-========================
+Tips Octave 2: Octave en las redes sociales
+===========================================
 
-Octave en las redes sociales
-----------------------------
 
 .. image:: _static/octavedoc.png
    :width: 250px
    :alt: Octave Documentation
 
-La presencia de Octave en las redes sociales permite interactuar a la comunidad de usuarios de Octave, compartiendo experiencias, recursos y soluciones de problemas comunes.
+La presencia de Octave en las redes sociales permite interactuar a la comunidad de usuarios de Octave, compartiendo experiencias, recursos y soluciones de problemas comunes. Repasamos a continuación algunos de los perfiles sociales de Octave en la Web:
 
 - **Portal de Octave:** El primer sitio de referencia para Octave es el portal oficial de Octave en `[1] <http://www.gnu.org/software/octave/>`_. En este portal es donde tendremos a disposición las últimas versiones estables de Octave para los distintos sitemas operativos. Es el lugar donde está la documentación oficial de Octave. Podemos acceder a la documentación oficial a través de la red, en formato html, en `[2] <http://www.gnu.org/software/octave/doc/interpreter/index.html>`_ o en formato pdf para descargar en `[3] <http://www.gnu.org/software/octave/octave.pdf>`_.
 
@@ -21,6 +19,7 @@ La presencia de Octave en las redes sociales permite interactuar a la comunidad 
 - **Linkedin:** También encontramos varias páginas en Linkedin dedicadas a usuarios de Octave. Un ejemplo lo puedes ver en `[8] <https://www.linkedin.com/groups?home=&gid=4044339&trk=anet_ug_hm>`_
 
 - **Google+:** En Google+ podemos acceder al perfil de GNU OCtave en `[9] <https://plus.google.com/u/0/115085835259570491111/posts>`_
+
 
 [1] `Portal de Octave <http://www.gnu.org/software/octave/>`_
 

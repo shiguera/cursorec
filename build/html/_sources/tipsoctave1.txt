@@ -1,5 +1,5 @@
-Tips and tricks Octave 1
-========================
+Tips Octave 1: el historial, atajos de teclado y más
+====================================================
 
 Acceder a los comandos del historial con el cursor
 --------------------------------------------------

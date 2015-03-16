@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tips and tricks del sistema operativo 2 &mdash; Introducción a la programación con Octave 1.0 documentation</title>
+    <title>Tips del sistema operativo 2: la consola y el path &mdash; Introducción a la programación con Octave 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Introducción a la programación con Octave 1.0 documentation" href="index.html" />
     <link rel="up" title="Semana 2" href="semana2.html" />
-    <link rel="next" title="Tips and tricks Octave 2" href="tipsoctave2.html" />
-    <link rel="prev" title="Unidades de medida y orden de magnitud" href="teoria2.html" /> 
+    <link rel="next" title="Tips Octave 2: Octave en las redes sociales" href="tipsoctave2.html" />
+    <link rel="prev" title="Teoría de programación: Unidades de medida y orden de magnitud" href="teoria2.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,10 +36,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="tipsoctave2.html" title="Tips and tricks Octave 2"
+          <a href="tipsoctave2.html" title="Tips Octave 2: Octave en las redes sociales"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="teoria2.html" title="Unidades de medida y orden de magnitud"
+          <a href="teoria2.html" title="Teoría de programación: Unidades de medida y orden de magnitud"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Introducción a la programación con Octave 1.0 documentation</a> &raquo;</li>
           <li><a href="semana2.html" accesskey="U">Semana 2</a> &raquo;</li> 
@@ -51,8 +51,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="tips-and-tricks-del-sistema-operativo-2">
-<h1>Tips and tricks del sistema operativo 2<a class="headerlink" href="#tips-and-tricks-del-sistema-operativo-2" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tips-del-sistema-operativo-2-la-consola-y-el-path">
+<h1>Tips del sistema operativo 2: la consola y el path<a class="headerlink" href="#tips-del-sistema-operativo-2-la-consola-y-el-path" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="la-consola-del-sistema-operativo">
 <h2>La consola del sistema operativo<a class="headerlink" href="#la-consola-del-sistema-operativo" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/consolawin.png"><img alt="Consola Windows" src="_images/consolawin.png" style="width: 400px;" /></a>
@@ -62,15 +62,17 @@
 <p>Los usuarios de Linux disponen de consolas muy potentes que permiten hacer cualquier cosa que se pueda hacer con el ordenador.</p>
 <p>En Windows 7 podemos accedera la consola mediante <strong>Inicio&gt; Todos los programas&gt; Accesorios&gt; símbolo del sistema</strong>. También mediante la barra de búsqueda o archivos del menú de inicio introduciendo “<strong>cmd</strong>” o “<strong>símbolo del sistema</strong>”. Pulsando en ellos con el botón derecho del ratón podemos elegir el acceso en modo usuario o administrador. En Windows 8, el acceso más sencillo lo encontramos en el menú de usuario haciendo clic secundario en el botón de inicio.</p>
 <p>Puedes echar un vistazo al siguiente artículo que habla de cómo acceder a la consola y cómo utilizar algunos de sus comandos en un sistema operativo Windows.</p>
-<p><a class="reference external" href="http://www.muycomputer.com/2014/07/30/comandos-cmd">Comandos CMD, la consola de Windows también existe</a></p>
+<p><a class="reference external" href="http://goo.gl/pUEc2n">Comandos CMD, la consola de Windows también existe</a></p>
 </div>
 <div class="section" id="el-path-del-sistema">
 <h2>El path del sistema<a class="headerlink" href="#el-path-del-sistema" title="Permalink to this headline">¶</a></h2>
-<p><strong>PATH</strong> es una variable de entorno de los sistemas operativos. El contenido de la variable <em>path</em> es una lista de directorios. Estos directorios son las rutas en las cuales el intérprete de comandos debe buscar los programas a ejecutar. Cada vez que ordenamos ejecutar un comando, el sistema operativo buscará el programa correspondiente en el directorio actual y en la lista de directorios que hay guardada en la variable <em>path</em>.</p>
+<p><strong>PATH</strong> es una variable de entorno de los sistemas operativos. El contenido de la variable <em>path</em> es una lista de directorios. Estos directorios son las rutas en las cuales el intérprete de comandos debe buscar los programas a ejecutar. Cada vez que ordenamos ejecutar un comando, el sistema operativo buscará el programa correspondiente en el directorio actual y en la lista de directorios que hay guardados en la variable <em>path</em>.</p>
 <p>Para que funcionen bien algunos programas es necesario incluir su directorio en la variable <em>path</em>. Es el caso de Octave.</p>
+<p>En Windows puedes ver el contenido de la variable <em>path</em> abriendo una consola y tecleando el comando <em>path</em>. También puedes ver o modificar el contenido a través de herramientas gráficas. Echa un vistazo al siguiente artículo, donde se explica cómo hacerlo.</p>
+<p><a class="reference external" href="http://goo.gl/xlLyu6">How to set the path in Windows 7</a></p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">El interprete de Octave también tiene su propia variable <em>path</em>, que es una lista de directorios donde buscará los ficheros <em>.m</em> que ordenamos ejecutar desde la consola. Podemos ver el contenido de la variable <em>path</em> del interprete de Octave tecleando <em>path</em> en la consola. También podemos modificar la variable <em>path</em> Para conocer más acerca del uso de la función <em>path()</em> teclea en consola <em>help path</em>.</p>
+<p class="last">El interprete de Octave también tiene su propia variable <em>path</em>, que es una lista de directorios donde buscará los ficheros <em>.m</em> que ordenamos ejecutar desde la consola. Podemos ver el contenido de la variable <em>path</em> del interprete de Octave tecleando <em>path</em> en la consola. También podemos modificar la variable <em>path</em>. Para conocer más acerca del uso de la función <em>path()</em> teclea en consola <em>help path</em>.</p>
 </div>
 </div>
 </div>
@@ -83,7 +85,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Tips and tricks del sistema operativo 2</a><ul>
+<li><a class="reference internal" href="#">Tips del sistema operativo 2: la consola y el path</a><ul>
 <li><a class="reference internal" href="#la-consola-del-sistema-operativo">La consola del sistema operativo</a></li>
 <li><a class="reference internal" href="#el-path-del-sistema">El path del sistema</a></li>
 </ul>
@@ -92,10 +94,10 @@
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="teoria2.html"
-                        title="previous chapter">Unidades de medida y orden de magnitud</a></p>
+                        title="previous chapter">Teoría de programación: Unidades de medida y orden de magnitud</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="tipsoctave2.html"
-                        title="next chapter">Tips and tricks Octave 2</a></p>
+                        title="next chapter">Tips Octave 2: Octave en las redes sociales</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/tipsso2.txt"
@@ -125,10 +127,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="tipsoctave2.html" title="Tips and tricks Octave 2"
+          <a href="tipsoctave2.html" title="Tips Octave 2: Octave en las redes sociales"
              >next</a> |</li>
         <li class="right" >
-          <a href="teoria2.html" title="Unidades de medida y orden de magnitud"
+          <a href="teoria2.html" title="Teoría de programación: Unidades de medida y orden de magnitud"
              >previous</a> |</li>
         <li><a href="index.html">Introducción a la programación con Octave 1.0 documentation</a> &raquo;</li>
           <li><a href="semana2.html" >Semana 2</a> &raquo;</li> 

@@ -24,40 +24,42 @@
 	"buffers":
 	[
 		{
-			"file": "source/semana2.rst",
-			"settings":
-			{
-				"buffer_size": 105,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Unidades de medida y orden de magnitud\n======================================\n\nVamos a comenzar el análisis del artículo de Dewdney, y lo vamos a hacer empezando por las 'estampas'. Es curioso ver los anuncios comerciales que aparecen. Se nota el paso del tiempo. Vamos a analizar el anuncio que sale en la cuarta página referente un ordenador IBM que se vendía por aquellas fechas. El artículo es de diciembre de 1984 y el ordenador que se presenta es uno de los pocos ordenadores personales que se podía comprar. \n\n.. image:: _static/ibmpc1.png\n   :width: 400px\n   :alt: IBM PC\n\nPero antes de analizar las características de ese ordenador, vamos a repasar un poco las unidades de medida que se utilizan en informática para medir la información. La unidad básica de medida de la información es el **bit**. Un *bit* es una unidad de información que puede tomar dos valores: **verdadero** o **falso**, que se suelen representar por **1** y **0**, respectivamente. Los ordenadores utilizan grupos de bits durante el procesamiento. Por otra parte, los documentos y programas que guardamos en los dispositivos de almacenamiento están también codificados en agrupaciones de bits para definir los caracteres de que constan. Se definen unas unidades múltiplo del bit para poder medir la cantidad de información. El **byte**, que equivale a ocho *bits*, es la unidad en la que se suelen basar las medidas. \n\n- **byte** : Un byte son ocho bits. Si lo interpretamos como un número en base binaria puede almacenar un número entero entre 0 y 255. Si queremos considerarlo como un entero que pueda ser positivo o negativo, puede representar un número entre -128 y 127. También podemos representar con un *byte*, un caracter de texto simple (del alfabeto inglés, sin caracteres especiales, ñ, acentuadas, ...).\n\n.. note:: El tipo de datos **int8** de Octave se corresponde con un número entero de un byte de tamaño, pudiendo guardar números enteros entre -128 y 127. Puedes comprobarlo en la consola de Octave tecleando **intmin('int8')** y **intmax('int8')**\n\n- **dos bytes**: Con dos bytes se pueden representar los caracteres y dígitos de los distintos alfabetos existentes, incluyendo todo tipo de caracteres especiales, signos de puntuación, etc. \n\n.. note:: En Octave existe un tipo de datos denominado **int16** que utiliza dos bytes para el almacenamiento y representa números enteros entre -32768 y 32767. Puedes comprobarlo en la consola de Octave tecleando **intmin('int16')** y **intmax('int16')**\n\n- **kilobyte, kB**: Un kilobyte se utiliza como el equivalente de 1024 bytes (2^10) o de 1000 bytes, según el contexto. A efectos de orden de magnitud nos da igual uno que otro. \n\n- **4 kilobytes**: El contenido de una página escrita a máquina, equivalente aproximadamente a 25 líneas de 80 caracteres cada una, incluyendo espacios. \n\n- **Megabyte**: Un *megabyte*, o un **mega** como se suele abreviar, equivale a un millón de bytes. Equivaldría a 250 páginas escritas.\n\n- **Gigabyte**: Un *gigabyte*, o un **giga** como se suele abreviar, equivale a mil millones de bytes, o lo que es lo mismo, mil libros de 250 páginas cada uno.\n\n- **Terabyte**: Un *terabyte*, o **tera** como se suele abreviar, equivale a mil gigas, un millón de millones de bytes, 10^12 bytes, un millón de libros de 250 páginas cada uno.\n\nVolvamos al anuncio del *IBM PC*. En el cuadro resumen de características podemos leer lo siguiente:\n\n.. image:: _static/ibmpc2.png\n   :width: 250px\n   :alt: IBM PC\n\n- **Memoria RAM:** La memoria RAM es la que está disponible para cargar los programas y datos que ejecuta el ordenador, uno de los cuales es el sistema operativo. Marca la cantidad de información que podemos tener simultaneamente cargada para procesamiento. Es el sitio de donde el procesador coge la información y las instrucciones a ajecutar, y donde deposita los resultados. Cuando se apaga el ordenador, el contenido de la memoria RAM se pierde. El *IBM PC* tenía una memoria RAM de 128 kilobytes, expandible a 512 kB, o sea, el equivalente a 32 folios escritos expandible a 128 folios escritos. El ordenador sobre el que estoy escribiendo estas líneas es un ordenador portátil con 8 gigas de RAM, o sea, el equivalente a ocho mil libros de 250 páginas cada uno, 15625 veces más que la máxima expansión del *IBM PC*.\n\n- **Memoria ROM:** Es una memoria cuyo contenido no se pierde aunque apaguemos el ordenador. Contiene los programas y datos básicos para cargar y poner en funcionamiento el sistema operativo. El *IBM PC* tenía 64 kB de memoria ROM, o el equivalente a 16 folios escritos. El ordenador sobre el que escribo tiene 2560 kB de memoria ROM, 640 folios escritos, 40 veces más que el *IBM PC*.\n\n- **Diskette:** Para almacenar de manera definitiva datos y programas se utilizaban los denominados *diskettes*, que era un disco magnético de 5.25 pulgadas de diámetro. Tenían una capacidad, en aquel momento de 360 kB, utilizando las dos caras del disco. En cada disco se podía guardar el eqivalente a 90 folios escritos. Los discos actuales, denominados *DVD*, tienen capacidades de 4 gigas, o sea, unas once mil veces más.\n\n- **Disco duro:** El ordenador del anuncio no tenía disco duro. Sí que había modelos parecidos con disco duro. Empezaron siendo de 10 megabytes y enseguida pasaron a 20 megabytes. El equivalente a cinco mil folios escritos. El disco duro del ordenador que estoy utilizando tiene 1 **terabyte**, un millón de libros de doscientas cincuenta páginas, cincuenta mil veces más que los discos duros de entonces.\n\n- **Pantalla:** Las pantallas podían trabajar en modo caracteres, similar a la consola de Octave, o en modo gráfico. En el caso de trabajar en modo caracteres se podía utilizar una pantalla 40 o de 80 caracteres de ancho. En el modo gráfico se podían utilizar gráficos de 320x200 puntos, con 16 colores posibles para los puntos, o con gráficos de 640x200 puntos, con un máximo de 4 colores posibles. Las pantallas actuales para ordenadores funcionan siempre en modo gráfico, con resoluciones de 1920x1080 puntos y con 16 millones de colores posibles para cada ppunto.\n\n.. note:: Cada punto iluminado de la pantalla se denomina **pixel**. La *resolución* de una pantalla es el número de puntos que puede dibujar. Hay otro parámetro que marca la calidad y legibilidad de una pantalla, la **densidad de pixels**, que se mide en una unidad denominada **dpi**, *dots per inch*, puntos por pulgada. La unidad de densidad *dpi* es el número de pixels que hay en dos centímetros y medio de ancho de pantalla. No se ve igual una imagen de 100x100 puntos en una pantalla que tenga 10 centímetros de ancho que en una que tenga 20 centímetros de ancho. Los móviles tienen resoluciones de 800x600 pixels, por ejemplo, con una densidad alta, por ejemplo 160 puntos por pulgada, lo que favorece su legibilidad. \n\n- **Procesador:** El procesador va recibiendo datos a través del llamado *bus* a intervalos marcados por un reloj de frecuencia determinada. El anuncio habla del procesador Intel 8088 de 16 bits, el reloj seguramente tendría 4.77 MHz. En cada impulso del reloj entraban 16 bits al procesador (ver nota). Podríamos establecer un parámetro bits/segundo, resultando que el Intel 8088 procesaba 4.77e6*16= 76.32e6 b/s. El ordenador en el que estoy trabajando tiene un procesador Intel de 64 bits a 2.50GHz. Si calculamos el mismo parámetro tendríamos 2500e6*64=160000e6 b/s, o sea, la capacidad de procesamiento de mi ordenador, medida con este parámetro, es más de dos mil veces la del IBM PC.   \n\n.. note:: En realidad el bus externo del procesador Intel 8088 era de ocho bits, eran los registros del procesador los que eran de 16 bits. (Fuente `Wikipedia <http://en.wikipedia.org/wiki/Intel_8088>`_)\n\n",
-			"file": "source/teoria2.rst",
-			"file_size": 7806,
-			"file_write_time": 130704024865428371,
-			"settings":
-			{
-				"buffer_size": 7717,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/tipsoctave2.rst",
-			"settings":
-			{
-				"buffer_size": 3370,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Tips and tricks del sistema operativo 2\n=======================================\n\nLa consola del sistema operativo\n--------------------------------\n\n.. image:: _static/consolawin.png\n   :width: 400px\n   :alt: Consola Windows\n\nTodos los sitemas operativos nos ofrecen una consola para acceder a las operaciones del mismo. El aspecto es similar en todos: una consola de texto, con un prompt esperando la entrada de un comando. Las respuestas a los comandos tecleados se muestran a través de la misma consola.\n\nPensar en las consolas como la forma antigua de utilizar el ordenador, por contraposición a la utilización a través de los interfaces gráficos basados en ventanas y utilización del ratón es un error. La consola es un método más eficiente de realizar determinadas tareas. En algunos sistemas incluso es la única manera de acceder al computador. Lo que sucede es que la curva de aprendizaje de la consola es mayor, y su uso se suele limitar a los usuarios medios y avanzados. \n\nLos programadores deben realizar un uso intensivo de los sistemas de archivos, y es conveniente que conozcan al menos algunos comandos básicos de consola. \n\nLos usuarios de Linux disponen de consolas muy potentes que permiten hacer cualquier cosa que se pueda hacer con el ordenador.\n\nEn Windows 7 podemos accedera la consola mediante **Inicio> Todos los programas> Accesorios> símbolo del sistema**. También mediante la barra de búsqueda o archivos del menú de inicio introduciendo “**cmd**” o “**símbolo del sistema**”. Pulsando en ellos con el botón derecho del ratón podemos elegir el acceso en modo usuario o administrador. En Windows 8, el acceso más sencillo lo encontramos en el menú de usuario haciendo clic secundario en el botón de inicio.\n\nPuedes echar un vistazo al siguiente artículo que habla de cómo acceder a la consola y cómo utilizar algunos de sus comandos en un sistema operativo Windows.\n\n`Comandos CMD, la consola de Windows también existe <http://goo.gl/pUEc2n>`_\n\nEl path del sistema\n-------------------\n\n**PATH** es una variable de entorno de los sistemas operativos. El contenido de la variable *path* es una lista de directorios. Estos directorios son las rutas en las cuales el intérprete de comandos debe buscar los programas a ejecutar. Cada vez que ordenamos ejecutar un comando, el sistema operativo buscará el programa correspondiente en el directorio actual y en la lista de directorios que hay guardados en la variable *path*.\n\nPara que funcionen bien algunos programas es necesario incluir su directorio en la variable *path*. Es el caso de Octave. \n\nEn Windows puedes ver el contenido de la variable *path* abriendo una consola y tecleando el comando *path*. También puedes ver o modificar el contenido a través de herramientas gráficas. Echa un vistazo al siguiente artículo, donde se explica cómo hacerlo.\n\n`How to set the path in Windows 7 <http://goo.gl/xlLyu6>`_\n\n.. note:: El interprete de Octave también tiene su propia variable *path*, que es una lista de directorios donde buscará los ficheros *.m* que ordenamos ejecutar desde la consola. Podemos ver el contenido de la variable *path* del interprete de Octave tecleando *path* en la consola. También podemos modificar la variable *path*. Para conocer más acerca del uso de la función *path()* teclea en consola *help path*.\n\n",
 			"file": "source/tipsso2.rst",
-			"file_size": 3352,
-			"file_write_time": 130704031319228180,
 			"settings":
 			{
-				"buffer_size": 3307,
+				"buffer_size": 3329,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/tipsso3.rst",
+			"settings":
+			{
+				"buffer_size": 3912,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/teoria1.rst",
+			"settings":
+			{
+				"buffer_size": 16397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/teoria2.rst",
+			"settings":
+			{
+				"buffer_size": 7765,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/teoria3.rst",
+			"settings":
+			{
+				"buffer_size": 4713,
 				"line_ending": "Unix"
 			}
 		}
@@ -137,24 +139,28 @@
 	},
 	"expanded_folders":
 	[
-		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source",
-		"/home/shiguera/Dropbox/InformaticaCaminos/OctaveIntro"
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source"
 	],
 	"file_history":
 	[
-		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/teoria1.rst",
-		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/teoria2.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/teoria3.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsoctave1.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsoctave2.rst",
-		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsso2.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsoctave3.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsso1.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/teoria2.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsso3.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/index.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/semana3.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsso2.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/semana2.rst",
+		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/teoria1.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/semana2.html",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/semana1.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/m/prueba.m",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/ejemplo.html",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/intro.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/semana4.rst",
-		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsso1.rst",
-		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsoctave1.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsoctave.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/OctaveIntro/ficheros.rst",
 		"/home/shiguera/Dropbox/InformaticaCaminos/cursorec/source/tipsso.rst",
@@ -264,12 +270,7 @@
 		"/home/shiguera/Documentos/tesis/docs/ElsevierSubmission/smartphone_software_for_geotagging.tex",
 		"/home/shiguera/Documentos/tesis/docs/ElsevierSubmission/smartphone_sensor_data.tex",
 		"/home/shiguera/Documentos/tesis/docs/ElsevierSubmission/video_storage_requirements.tex",
-		"/home/shiguera/Documentos/tesis/docs/master/docB.tex",
-		"/home/shiguera/Documentos/tesis/docs/master/portadaDocumentoB.tex",
-		"/home/shiguera/Documentos/tesis/docs/master/intro.tex",
-		"/home/shiguera/Documentos/tesis/docs/master/docB-english/docB_en2.tex",
-		"/home/shiguera/Documentos/tesis/docs/master/docB-english/docBtraducidohastasmartphones.tex",
-		"/home/shiguera/Documentos/tesis/docs/master/styleB.tex"
+		"/home/shiguera/Documentos/tesis/docs/master/docB.tex"
 	],
 	"find":
 	{
@@ -288,6 +289,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cente",
 			"\\*",
 			"\\*\\*",
 			"**",
@@ -414,8 +416,7 @@
 			" ó",
 			"´e",
 			"´ı",
-			"´o",
-			" ´o"
+			"´o"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -494,24 +495,52 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/semana2.rst",
+					"file": "source/tipsso2.rst",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 105,
+						"buffer_size": 3329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								105,
-								105
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/tipsso3.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -526,48 +555,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "source/teoria2.rst",
+					"buffer": 2,
+					"file": "source/teoria1.rst",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7717,
+						"buffer_size": 16397,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5342,
-								5342
+								97,
+								97
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1026.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "source/tipsoctave2.rst",
+					"buffer": 3,
+					"file": "source/teoria2.rst",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3370,
+						"buffer_size": 7765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2340,
-								2340
+								0,
+								0
 							]
 						],
 						"settings":
@@ -575,27 +606,27 @@
 							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 408.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "source/tipsso2.rst",
+					"buffer": 4,
+					"file": "source/teoria3.rst",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3307,
+						"buffer_size": 4713,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1673,
-								1673
+								510,
+								510
 							]
 						],
 						"settings":
@@ -603,7 +634,7 @@
 							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 306.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

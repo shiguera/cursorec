@@ -1,5 +1,5 @@
-Tips and tricks del sistema operativo 1
-=======================================
+Tips del sistema operativo 1: el explorador y los nombres de los archivos 
+=========================================================================
 
 El explorador de archivos
 -------------------------
